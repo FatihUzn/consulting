@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title data-key="title">Golden Palace — Real Estate & Architecture</title>
+<link rel="icon" type="image/png" href="assets/golden_palace_logo.webp">
+<link rel="preload" as="image" href="assets/golden_palace_logo.webp">
+<link rel="preload" as="image" href="assets/background.webp">
+<link rel="preload" as="image" href="assets/for_hero.webp">
+<link rel="preload" as="fetch" href="data/galleries.json?v=1.1" crossorigin>
+<link rel="preload" as="fetch" href="en.json" crossorigin>
+<link rel="preload" as="fetch" href="ar.json" crossorigin>
+<link rel="preload" as="fetch" href="zh.json" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha512-Fo3rlrZj/k7ujm/0/1NnL4A7qYv6E4t+8aC6S5L4b5L4ZlV5x5F5a0d3Q3n8A/gI/oXq2VlM2R0p8C5lS5o5A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujm/0/1NnL4A7qYv6E4t+8aC6S5L4b5L4ZlV5x5F5a0d3Q3n8A/gI/oXq2VlM2R0p8C5lS5o5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+
+<link rel="stylesheet" href="style.css?v=1.6">
+
+<style>
+  /* === HEADER (ÜST BİLGİ) İÇİN YENİ STİLLER === */
+  header {
+    display: block; 
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.0) 100%);
+    transition: background-color 0.3s;
+  }
+  header.scrolled {
+      background-color: rgba(10, 10, 10, 0.9);
+  }
+  .header-top-row {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 8px 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .header-top-row a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .header-top-row a:hover {
+    color: #ffcc66;
+  }
+  .header-top-row .top-bar-left a {
+    margin-right: 20px;
+  }
+  .header-top-row i {
+    margin-right: 8px;
+    color: #ffcc66;
+  }
+  .header-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    height: 80px;
+  }
+
+  .hero-content-overlay .hero-since {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+  }
+  .hero-content-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin: 0;
+  }
+  .hero-content-overlay p {
+    font-size: 1.25rem;
+    margin: 10px 0 30px 0;
+  }
+  
+  /* Keşfet Butonu stilleri - BURASI TEMİZLENDİ - */
+  .cta-group {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* ========================================= */
+  /* === YENİ GENİŞ FOOTER STİLLERİ (Değişmedi) === */
+  /* ========================================= */
+  .site-footer {
+    background-color: #0c0c0c; 
+    color: #a0a0a0;
+    padding: 60px 30px 20px 30px;
+    border-top: 1px solid #333;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 40px auto;
+  }
+  .footer-column h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffcc66;
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+  .footer-column.logo-column h3 {
+    border-bottom: none;
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  .footer-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s, padding-left 0.3s;
+    display: inline-block;
+  }
+  .footer-links a:hover {
+    color: #ffcc66;
+    padding-left: 5px;
+  }
+  .footer-column.logo-column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer-column.logo-column .social-icons {
+    margin-top: 20px;
+  }
+  .footer-links.contact-info li {
+    display: flex;
+    align-items: flex-start;
+  }
+  .footer-links.contact-info i {
+    color: #ffcc66;
+    margin-right: 12px;
+    margin-top: 5px;
+    width: 15px;
+  }
+  .footer-links.contact-info span,
+  .footer-links.contact-info a {
+    flex: 1;
+    padding-left: 0; 
+  }
+  .footer-links.contact-info a:hover {
+    color: #ffcc66;
+    padding-left: 0;
+  }
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    background-color: transparent;
+  }
+
+  /* === MOBİL UYUMLULUK GÜNCELLEMELERİ === */
+  @media (max-width: 992px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer-column.logo-column {
+      grid-column: 1 / -1;
+      order: -1;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* Header mobil ayarı */
+    .header-top-row {
+      padding: 10px 15px;
+      font-size: 0.75rem;
+    }
+    .header-top-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .header-bottom-row {
+      padding: 10px 15px;
+      height: 70px;
+    }
+    .hero-content-overlay h1 {
+      font-size: 3rem; /* Mobil'de başlık */
+    }
+
+    /* Footer Mobil */
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    .footer-column {
+      margin-bottom: 20px;
+    }
+    .footer-column.logo-column {
+      margin-bottom: 30px;
+    }
+    .site-footer {
+      padding: 40px 15px 20px 15px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<header id="main-header">
+  <div class="header-top-row">
+    <div class="top-bar-left">
+      <a href="tel:+902125551923" class="btn btn-top-info"><i class="fas fa-phone"></i> +90 (212) 555 1923</a>
+      <a href="mailto:info@goldenpalace.com" class="btn btn-top-info"><i class="fas fa-envelope"></i> info@goldenpalace.com</a>
+      </div>
+    <div class="top-bar-right">
+      <a href="https://www.google.com/maps/search/?api=1&query=Kazliçesme,+Kennedy+Cad.+I+blok+no+99,+34020+Zeytinburnu/istanbul" target="_blank" rel="noopener noreferrer" class="btn btn-top-info"><i class="fas fa-map-marker-alt"></i> Yol Tarifi Al</a>
+    </div>
+  </div>
+
+  <div class="header-bottom-row">
+    <div class="brand">
+      <img src="assets/golden_palace_logo.webp" alt="Golden Palace Logo"> <div class="brand-text-container">
+          <span class="brand-title" data-key="brand_golden_palace">Golden Palace</span>
+          <span class="brand-tagline" data-key="brand_realstate">Real Estate & Architecture</span>
+      </div>
+    </div>
+  
+    <div style="display: flex; align-items: center;">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menüyü aç/kapat">
+          <i class="fas fa-bars"></i>
+      </button>
+    
+      <nav class="navbar" id="navbar">
+        <a data-page="hero" class="nav-link" data-key="nav_home">Anasayfa</a>
+        <a data-page="page-about" class="nav-link" data-key="nav_about">Kurumsal</a>
+        <a data-page="page-services" class="nav-link" data-key="nav_services">Hizmetler</a>
+        <a data-page="page-projects" class="nav-link" data-key="nav_projects">Projeler</a>
+        <a data-page="page-contact" class="nav-link" data-key="nav_contact">İletişim</a>
+        <div class="language-selector mobile-only" style="display: none;">
+            <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">TR</button>
+            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
+            <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button> </div>
+      </nav>
+    
+      <div class="language-selector desktop-only" style="margin-left: 20px;">
+          <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">TR</button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
+          <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button> </div>
+    </div>
+  </div>
+</header>
+<section class="hero-video page-section active" id="hero">
+  <video autoplay muted loop playsinline class="hero-video-bg">
+    <source src="assets/hero_background.mp4" type="video/mp4">
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
+
+  <div class="hero-content-overlay">
+    <p class="hero-since" data-key="hero_since">1997'DEN BERİ</p>
+    <h1 data-key="hero_title">Golden Palace</h1>
+    
+    <h2 id="changing-text" data-key="hero_subtitle" style="font-size: 1.25rem; margin: 10px 0 30px 0;"></h2>
+    
+    <div class="hero-links-container action-buttons">
+      <a href="#" data-page="page-otel" data-category="otel" data-key="drop_hotel" class="btn btn-hero-link">Turizm De Biz</a>
+      <a href="#" data-page="page-restorasyon" data-category="restorasyon" data-category="restorasyon" data-key="drop_restoration" class="btn btn-hero-link">Restorasyon Projeleri</a>
+      <a href="#" data-page="page-satilik_kiralik" data-category="satilik_kiralik" data-key="drop_rental" class="btn btn-hero-link">Ticari Ve Konut</a>
+    </div>
+</section>
+
+<main id="page-container">
+</main>
+
+
+<footer class="site-footer">
+    <div class="footer-grid">
+
+        <div class="footer-column">
+            <h3 data-key="footer_col_1_title">Menü Link</h3>
+            <ul class="footer-links">
+                <li><a href="#hero" data-page="hero" class="nav-link" data-key="nav_home">Anasayfa</a></li>
+                <li><a href="#page-about" data-page="page-about" class="nav-link" data-key="nav_about">Kurumsal</a></li>
+                <li><a href="#page-services" data-page="page-services" class="nav-link" data-key="nav_services">Hizmetler</a></li>
+                <li><a href="#page-projects" data-page="page-projects" class="nav-link" data-key="nav_projects">Projeler</a></li>
+                <li><a href="#page-contact" data-page="page-contact" class="nav-link" data-key="nav_contact">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-key="footer_col_2_title">Hizmetlerimiz</h3>
+            <ul class="footer-links">
+                <li><a href="#page-services" data-page="page-services" data-key="service_h3_1">Mimari Tasarım</a></li>
+                <li><a href="#page-services" data-page="page-services" data-key="service_h3_2">İç Mekan Tasarımı</a></li>
+                <li><a href="#page-services" data-page="page-services" data-key="service_h3_3">Restorasyon ve Koruma</a></li>
+                <li><a href="#page-services" data-page="page-services" data-key="service_h3_4">Proje Yönetimi</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column logo-column">
+            <div class="footer-logo-container">
+                <img src="assets/golden_palace_logo.webp" alt="Golden Palace Logo">
+                <div class="footer-text-container">
+                    <span class="footer-title" data-key="brand_golden_palace">Golden Palace</span>
+                    <span class="brand-tagline" data-key="brand_realstate">Real Estate & Architecture</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Behance"><i class="fab fa-behandu
+ce"></i></a>
+                <a href="mailto:info@goldenpalace.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-key="footer_col_4_title">Projeler</h3>
+            <ul class="footer-links">
+                <li><a href="#page-otel" data-page="page-otel" data-key="drop_hotel">Turizm De Biz</a></li>
+                <li><a href="#page-restorasyon" data-page="page-restorasyon" data-key="drop_restoration">Restorasyon Projeleri</a></li>
+                <li><a href="#page-satilik_kiralik" data-page="page-satilik_kiralik" data-key="drop_rental">Ticari Ve Konut</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-key="footer_col_5_title">Bize Ulaşın</h3>
+            <ul class="footer-links contact-info">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-key="contact_info_address_p">Kazliçesme, Kennedy Cad. I blok no 99, 34020 Zeytinburnu/İstanbul</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+902125551923" data-key="contact_info_phone_p">+90 (212) 555 1923</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@goldenpalace.com" data-key="contact_info_email_p">info@goldenpalace.com</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <div class="footer-bottom" data-key="footer_copyright">
+        © 2025 Golden Palace Mimarlık. Tüm hakları saklıdır. | Tasarım ve İnovasyon Stüdyosu.
+    </div>
+</footer>
+<div id="lightbox" class="availability-modal" style="cursor: pointer; padding: 20px; display: none; align-items: center; justify-content: center;">
+  
+  <button id="lightbox-prev" class="lightbox-nav-btn" onclick="event.stopPropagation(); showPrevImage();">‹</button>
+
+  <img id="lightbox-img" src="" alt="Genişletilmiş Görüntü">
+
+  <button id="lightbox-next" class="lightbox-nav-btn" onclick="event.stopPropagation(); showNextImage();">›</button>
+
+</div>
+
+
+<div id="house-detail" class="house-detail">
+  <button onclick="closeHouseDetail()">← Geri</button>
+  <div id="house-detail-content"></div>
+</div>
+
+
+<div id="restorationImageModal" class="image-modal-overlay">
+  <button class="image-modal-close-btn" data-key="btn_close_modal_x">✖</button>
+  <div class="image-modal-content">
+    <div class="image-modal-image-wrapper">
+      <span class="image-modal-label" id="modalBeforeLabel" data-key="label_before">ÖNCE</span>
+      <img id="modalBeforeImage" src="" alt="Önceki Hali">
+    </div>
+    <div class="image-modal-image-wrapper">
+      <span class="image-modal-label" id="modalAfterLabel" data-key="label_after">SONRA</span>
+      <img id="modalAfterImage" src="" alt="Sonraki Hali">
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=1.6" defer></script>
+
+<script>
+    const data = [
+        {
+            title: "Mimarlık",
+            description: "Teknik standartlara göre şekillendirilmiş, verimli ve sürdürülebilir mimari çözümler tasarlıyoruz."
+        },
+        {
+            title: "Kat Karşılığı Sözleşme",
+            description: "Proje teslimi, bağımsız bölüm paylaşımı ve inşaat standartlarını hukuki normlara uygun şekilde yapılandırıyoruz."
+        },
+        {
+            title: "Ticari ve Konut",
+            description: "Doğru fiyatlama, teknik raporlama ve hızlı işlem süreçleriyle satış ve kiralama süreçlerini profesyonelce yönetiyoruz."
+        },
+        {
+            title: "Restorasyon",
+            description: "Tarihi yapıları özgün değerleriyle ustalıkla yeniliyoruz."
+        }
+    ];
+
+    let index = 0; 
+    const textElement = document.getElementById('changing-text'); 
+    const intervalTime = 5000; // 3 saniye
+
+    function changeTextWithFade() {
+        // 1. Fade Out: Opaklığı sıfıra düşür
+        if(textElement) {
+            textElement.style.opacity = '0'; 
+        }
+
+        // 2. Metni 0.5 saniye sonra değiştir
+        setTimeout(() => {
+            if(textElement) {
+                const currentData = data[index];
+                
+                // Metin içeriğini Kalın Başlık ve Açıklama olarak HTML'e yaz
+                textElement.innerHTML = `<strong>${currentData.title}</strong><br>${currentData.description}`;
+                
+                // 3. Fade In: Opaklığı tekrar 1 yap
+                textElement.style.opacity = '1'; 
+                
+                // 4. İndeksi bir sonraki öğeye ilerlet (Döngü)
+                index = (index + 1) % data.length;
+            }
+        }, 500); // CSS transition süresi ile uyumlu (0.5 saniye)
+    }
+
+    // HTML öğesi yüklü ise döngüyü başlat
+    if(textElement) {
+        changeTextWithFade();
+        setInterval(changeTextWithFade, intervalTime);
+    }
+</script>
+
+</body>
+</html>

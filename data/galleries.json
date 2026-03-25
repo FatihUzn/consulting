@@ -1,0 +1,255 @@
+{
+  "A": {
+    "title": "NURİPAŞA BİNA -SATILIK-",
+    "price": "450.000 $",
+    "location": "Nuri Paşa, İstanbul",
+    "area": "57m2",
+    "rooms": "Her katta 1 daire (Toplam 6 kat)",
+    "desc": "Bina yaşı 31 yıl ve üzeri. Arsa tapulu.",
+    "images": [
+      "assets/house-detail-gallery1A.webp", "assets/house-detail-gallery2A.webp", "assets/house-detail-gallery3A.webp", "assets/house-detail-gallery4A.webp", "assets/house-detail-gallery5A.webp", "assets/house-detail-gallery6A.webp", "assets/house-detail-gallery7A.webp", "assets/house-detail-gallery8A.webp", "assets/house-detail-gallery9A.webp", "assets/house-detail-gallery10A.webp", "assets/house-detail-gallery11A.webp", "assets/house-detail-gallery12A.webp", "assets/house-detail-gallery13A.webp", "assets/house-detail-gallery14A.webp", "assets/house-detail-gallery15A.webp", "assets/house-detail-gallery16A.webp", "assets/house-detail-gallery17A.webp", "assets/house-detail-gallery18A.webp", "assets/house-detail-gallery19A.webp", "assets/house-detail-gallery20A.webp", "assets/house-detail-gallery21A.webp", "assets/house-detail-gallery22A.webp", "assets/house-detail-gallery23A.webp", "assets/house-detail-gallery24A.webp", "assets/house-detail-gallery25A.webp", "assets/house-detail-gallery26A.webp", "assets/house-detail-gallery27A.webp", "assets/house-detail-gallery28A.webp", "assets/house-detail-gallery29A.webp", "assets/house-detail-gallery30A.webp"
+    ]
+  },
+  "B": {
+    "title": "BÜYÜKYALI 3.5+1 -SATILIK/KİRALIK-",
+    "price": "Kiralık Yıllık Peşin 7000 $ Satılık 1.990.000 $",
+    "location": "Büyükyalı, İstanbul",
+    "area": "220m2",
+    "rooms": "3.5+1",
+    "desc": "14. kat. VATANDAŞLIĞA UYGUN. Çift balkonlu.",
+    "images": [
+      "assets/house-detail-gallery1B.webp", "assets/house-detail-gallery2B.webp", "assets/house-detail-gallery3B.webp", "assets/house-detail-gallery4B.webp", "assets/house-detail-gallery5B.webp", "assets/house-detail-gallery6B.webp", "assets/house-detail-gallery7B.webp", "assets/house-detail-gallery8B.webp", "assets/house-detail-gallery9B.webp", "assets/house-detail-gallery10B.webp", "assets/house-detail-gallery11B.webp", "assets/house-detail-gallery12B.webp", "assets/house-detail-gallery13B.webp", "assets/house-detail-gallery14B.webp", "assets/house-detail-gallery15B.webp", "assets/house-detail-gallery16B.webp", "assets/house-detail-gallery17B.webp", "assets/house-detail-gallery18B.webp", "assets/house-detail-gallery19B.webp", "assets/house-detail-gallery20B.webp", "assets/house-detail-gallery21B.webp", "assets/house-detail-gallery22B.webp", "assets/house-detail-gallery23B.webp", "assets/house-detail-gallery24B.webp", "assets/house-detail-gallery25B.webp", "assets/house-detail-gallery26B.webp", "assets/house-detail-gallery27B.webp", "assets/house-detail-gallery28B.webp", "assets/house-detail-gallery29B.webp", "assets/house-detail-gallery30B.webp"
+    ]
+  },
+  "C": {
+    "title": "KAYAŞEHİR EMLAK KONUT BAŞAKŞEHİR EVLERİ -SATILIK-",
+    "price": "340.000 $",
+    "location": "Kayaşehir, Başakşehir",
+    "area": "202 m2",
+    "rooms": "4+1",
+    "desc": "Kapalı mutfak. Asansörlü. Balkonlu.",
+    "images": [
+      "assets/house-detail-gallery1C.webp", "assets/house-detail-gallery2C.webp", "assets/house-detail-gallery3C.webp", "assets/house-detail-gallery4C.webp", "assets/house-detail-gallery5C.webp", "assets/house-detail-gallery6C.webp", "assets/house-detail-gallery7C.webp", "assets/house-detail-gallery8C.webp", "assets/house-detail-gallery9C.webp", "assets/house-detail-gallery10C.webp", "assets/house-detail-gallery11C.webp", "assets/house-detail-gallery12C.webp", "assets/house-detail-gallery13C.webp", "assets/house-detail-gallery14C.webp", "assets/house-detail-gallery15C.webp", "assets/house-detail-gallery16C.webp", "assets/house-detail-gallery17C.webp", "assets/house-detail-gallery18C.webp", "assets/house-detail-gallery19C.webp", "assets/house-detail-gallery20C.webp", "assets/house-detail-gallery21C.webp", "assets/house-detail-gallery22C.webp", "assets/house-detail-gallery23C.webp", "assets/house-detail-gallery24C.webp", "assets/house-detail-gallery25C.webp", "assets/house-detail-gallery26C.webp", "assets/house-detail-gallery27C.webp", "assets/house-detail-gallery28C.webp", "assets/house-detail-gallery29C.webp", "assets/house-detail-gallery30C.webp"
+    ]
+  },
+  "D": {
+    "title": "BAHÇELİEVLER 6+2 DUBLEKS -SATILIK-",
+    "price": "12.250.000 TL",
+    "location": "Bahçelievler, İstanbul",
+    "area": "Brüt 300 m2 / Net 260 m2",
+    "rooms": "6+2 Dubleks",
+    "desc": "Bina yaşı 11-15 yıl. Bina kat sayısı 6, bulunduğu kat 5. Kapalı mutfak. 4 banyolu. Asansörlü.",
+    "images": [
+      "assets/house-detail-gallery1D.webp", "assets/house-detail-gallery2D.webp", "assets/house-detail-gallery3D.webp", "assets/house-detail-gallery4D.webp", "assets/house-detail-gallery5D.webp", "assets/house-detail-gallery6D.webp", "assets/house-detail-gallery7D.webp", "assets/house-detail-gallery8D.webp", "assets/house-detail-gallery9D.webp", "assets/house-detail-gallery10D.webp", "assets/house-detail-gallery11D.webp", "assets/house-detail-gallery12D.webp", "assets/house-detail-gallery13D.webp", "assets/house-detail-gallery14D.webp", "assets/house-detail-gallery15D.webp", "assets/house-detail-gallery16D.webp", "assets/house-detail-gallery17D.webp", "assets/house-detail-gallery18D.webp", "assets/house-detail-gallery19D.webp", "assets/house-detail-gallery20D.webp", "assets/house-detail-gallery21D.webp", "assets/house-detail-gallery22D.webp", "assets/house-detail-gallery23D.webp", "assets/house-detail-gallery24D.webp", "assets/house-detail-gallery25D.webp", "assets/house-detail-gallery26D.webp", "assets/house-detail-gallery27D.webp", "assets/house-detail-gallery28D.webp", "assets/house-detail-gallery29D.webp", "assets/house-detail-gallery30D.webp"
+    ]
+  },
+  "E": {
+    "title": "THE İSTANBUL RESIDENCE 2+1 -KİRALIK-",
+    "price": "110.000 TL",
+    "location": "The İstanbul Residence",
+    "area": "105m2",
+    "rooms": "2+1 Eşyalı",
+    "desc": "16. kat. Yarı kapalı mutfak. Balkonlu. Jakuzili. Ultra lüx. Şehir ve deniz manzaralı.",
+    "images": [
+      "assets/house-detail-gallery1E.webp", "assets/house-detail-gallery2E.webp", "assets/house-detail-gallery3E.webp", "assets/house-detail-gallery4E.webp", "assets/house-detail-gallery5E.webp", "assets/house-detail-gallery6E.webp", "assets/house-detail-gallery7E.webp", "assets/house-detail-gallery8E.webp", "assets/house-detail-gallery9E.webp", "assets/house-detail-gallery10E.webp", "assets/house-detail-gallery11E.webp", "assets/house-detail-gallery12E.webp", "assets/house-detail-gallery13E.webp", "assets/house-detail-gallery14E.webp", "assets/house-detail-gallery15E.webp", "assets/house-detail-gallery16E.webp", "assets/house-detail-gallery17E.webp", "assets/house-detail-gallery18E.webp", "assets/house-detail-gallery19E.webp", "assets/house-detail-gallery20E.webp", "assets/house-detail-gallery21E.webp", "assets/house-detail-gallery22E.webp", "assets/house-detail-gallery23E.webp", "assets/house-detail-gallery24E.webp", "assets/house-detail-gallery25E.webp", "assets/house-detail-gallery26E.webp", "assets/house-detail-gallery27E.webp", "assets/house-detail-gallery28E.webp", "assets/house-detail-gallery29E.webp", "assets/house-detail-gallery30E.webp"
+    ]
+  },
+  "F": {
+    "title": "THE İSTANBUL RESIDENCE 1+1 -KİRALIK-",
+    "price": "90.000 TL",
+    "location": "The İstanbul Residence",
+    "area": "75m2",
+    "rooms": "1+1 Eşyalı",
+    "desc": "16. Kat. Açık mutfak. Balkonlu. Deniz manzaralı.",
+    "images": [
+      "assets/house-detail-gallery1F.webp", "assets/house-detail-gallery2F.webp", "assets/house-detail-gallery3F.webp", "assets/house-detail-gallery4F.webp", "assets/house-detail-gallery5F.webp", "assets/house-detail-gallery6F.webp", "assets/house-detail-gallery7F.webp", "assets/house-detail-gallery8F.webp", "assets/house-detail-gallery9F.webp", "assets/house-detail-gallery10F.webp", "assets/house-detail-gallery11F.webp", "assets/house-detail-gallery12F.webp", "assets/house-detail-gallery13F.webp", "assets/house-detail-gallery14F.webp", "assets/house-detail-gallery15F.webp", "assets/house-detail-gallery16F.webp", "assets/house-detail-gallery17F.webp", "assets/house-detail-gallery18F.webp", "assets/house-detail-gallery19F.webp", "assets/house-detail-gallery20F.webp", "assets/house-detail-gallery21F.webp", "assets/house-detail-gallery22F.webp", "assets/house-detail-gallery23F.webp", "assets/house-detail-gallery24F.webp", "assets/house-detail-gallery25F.webp", "assets/house-detail-gallery26F.webp", "assets/house-detail-gallery27F.webp", "assets/house-detail-gallery28F.webp", "assets/house-detail-gallery29F.webp", "assets/house-detail-gallery30F.webp"
+    ]
+  },
+  "G": {
+    "title": "YEDİ MAVİ SATILIK 3+1",
+    "price": "13.500.000 $",
+    "location": "Yedi Mavi, İstanbul",
+    "area": "234m2",
+    "rooms": "3+1",
+    "desc": "4. kat. Peyzaj ve deniz manzaralı. Balkonlu. Ebeveyn banyolu. Kapalı mutfak.",
+    "images": [
+      "assets/house-detail-gallery1G.webp", "assets/house-detail-gallery2G.webp", "assets/house-detail-gallery3G.webp", "assets/house-detail-gallery4G.webp", "assets/house-detail-gallery5G.webp", "assets/house-detail-gallery6G.webp", "assets/house-detail-gallery7G.webp", "assets/house-detail-gallery8G.webp", "assets/house-detail-gallery9G.webp", "assets/house-detail-gallery10G.webp", "assets/house-detail-gallery11G.webp", "assets/house-detail-gallery12G.webp", "assets/house-detail-gallery13G.webp", "assets/house-detail-gallery14G.webp", "assets/house-detail-gallery15G.webp", "assets/house-detail-gallery16G.webp", "assets/house-detail-gallery17G.webp", "assets/house-detail-gallery18G.webp", "assets/house-detail-gallery19G.webp", "assets/house-detail-gallery20G.webp", "assets/house-detail-gallery21G.webp", "assets/house-detail-gallery22G.webp", "assets/house-detail-gallery23G.webp", "assets/house-detail-gallery24G.webp", "assets/house-detail-gallery25G.webp", "assets/house-detail-gallery26G.webp", "assets/house-detail-gallery27G.webp", "assets/house-detail-gallery28G.webp", "assets/house-detail-gallery29G.webp", "assets/house-detail-gallery30G.webp"
+    ]
+  },
+  "H": {
+    "title": "YEDİ MAVİ H BLOK DAİRE 18 -KİRALIK-",
+    "price": "1.500 $",
+    "location": "Yedi Mavi, H Blok",
+    "area": "75m2",
+    "rooms": "1+1 Eşyalı",
+    "desc": "3. kat. Şehir manzaralı. Açık mutfak. 6 aylık veya 1 yıllık peşin ödeme istenmekte (Dolar kuru üzerinden TL ödemesi yapılabilir).",
+    "images": [
+      "assets/house-detail-gallery1H.webp", "assets/house-detail-gallery2H.webp", "assets/house-detail-gallery3H.webp", "assets/house-detail-gallery4H.webp", "assets/house-detail-gallery5H.webp", "assets/house-detail-gallery6H.webp", "assets/house-detail-gallery7H.webp", "assets/house-detail-gallery8H.webp", "assets/house-detail-gallery9H.webp", "assets/house-detail-gallery10H.webp", "assets/house-detail-gallery11H.webp", "assets/house-detail-gallery12H.webp", "assets/house-detail-gallery13H.webp", "assets/house-detail-gallery14H.webp", "assets/house-detail-gallery15H.webp", "assets/house-detail-gallery16H.webp", "assets/house-detail-gallery17H.webp", "assets/house-detail-gallery18H.webp", "assets/house-detail-gallery19H.webp", "assets/house-detail-gallery20H.webp", "assets/house-detail-gallery21H.webp", "assets/house-detail-gallery22H.webp", "assets/house-detail-gallery23H.webp", "assets/house-detail-gallery24H.webp", "assets/house-detail-gallery25H.webp", "assets/house-detail-gallery26H.webp", "assets/house-detail-gallery27H.webp", "assets/house-detail-gallery28H.webp", "assets/house-detail-gallery29H.webp", "assets/house-detail-gallery30H.webp"
+    ]
+  },
+  "OTEL1": {
+    "title": "Kral Dairesi",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "120 m2",
+    "rooms": "1 Yatak Odası + 1 Salon",
+    "desc": "Panoramik deniz manzaralı, jakuzili ve özel teraslı en lüks süitimiz.",
+    "images": [
+      "assets/ks1.webp", "assets/ks2.webp", "assets/ks3.webp", "assets/ks4.webp", "assets/ks5.webp", "assets/ks6.webp", "assets/ks7.webp", "assets/ks8.webp", "assets/ks9.webp", "assets/ks10.webp", "assets/ks11.webp", "assets/ks12.webp", "assets/ks13.webp", "assets/ks14.webp", "assets/ks15.webp", "assets/ks16.webp"
+    ]
+  },
+  "OTEL2": {
+    "title": "Suit Oda (1+1)",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "75 m2",
+    "rooms": "1+1",
+    "desc": "Geniş balkonlu, oturma alanlı ve deniz manzaralı suit oda.",
+    "images": [
+      "assets/b1_plus1.webp", "assets/b1_plus2.webp", "assets/b1_plus3.webp", "assets/b1_plus4.webp", "assets/b1_plus5.webp", "assets/b1_plus6.webp", "assets/b1_plus7.webp", "assets/b1_plus8.webp", "assets/b1_plus9.webp", "assets/b1_plus10.webp"
+    ]
+  },
+  "OTEL3": {
+    "title": "Aile Odası (2+1)",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "60 m2",
+    "rooms": "2 Yatak Odası (Ara Kapılı)",
+    "desc": "Çocuklar için ayrı yatak odası bulunan konforlu aile odası.",
+    "images": [
+      "assets/b2_plus1.webp", "assets/b2_plus2.webp", "assets/b2_plus3.webp", "assets/b2_plus4.webp", "assets/b2_plus5.webp", "assets/b2_plus6.webp", "assets/b2_plus7.webp", "assets/b2_plus8.webp", "assets/b2_plus9.webp"
+    ]
+  },
+  "OTEL4": {
+    "title": "Superior Oda",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "35 m2",
+    "rooms": "1 Yatak Odası",
+    "desc": "Balkonlu ve deniz manzaralı standart oda.",
+    "images": [
+      "assets/fs1.webp", "assets/fs2.webp", "assets/fs3.webp", "assets/fs4.webp", "assets/fs5.webp", "assets/fs6.webp", "assets/fs7.webp", "assets/fs8.webp", "assets/fs9.webp", "assets/fs10.webp"
+    ]
+  },
+  "OTEL5": {
+    "title": "Ekonomik Oda",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "32 m2",
+    "rooms": "1 Yatak Odası",
+    "desc": "Kara manzaralı, ekonomik ve konforlu standart oda.",
+    "images": [
+      "assets/em1.webp", "assets/em2.webp", "assets/em3.webp", "assets/em4.webp", "assets/em5.webp", "assets/em6.webp"
+    ]
+  },
+  "OTEL6": {
+    "title": "Standart Oda",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "30 m2",
+    "rooms": "1 Yatak Odası",
+    "desc": "Modern tasarımlı standart oda.",
+    "images": [
+      "assets/st1.webp", "assets/st2.webp", "assets/st3.webp", "assets/st4.webp", "assets/st5.webp", "assets/st6.webp", "assets/st7.webp"
+    ]
+  },
+  "OTEL7": {
+    "title": "Deluxe Oda",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "40 m2",
+    "rooms": "1 Yatak Odası",
+    "desc": "Daha geniş oturma alanına sahip Deluxe oda.",
+    "images": [
+      "assets/sf1.webp", "assets/sf2.webp", "assets/sf3.webp", "assets/sf4.webp", "assets/sf5.webp", "assets/sf6.webp", "assets/sf7.webp"
+    ]
+  },
+  "OTEL8": {
+    "title": "Junior Suit",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "45 m2",
+    "rooms": "1+1 (Açık Plan)",
+    "desc": "Oturma alanı ve yatak odasının birleştiği geniş Junior Süit.",
+    "images": [
+      "assets/shr1.webp", "assets/shr2.webp", "assets/shr3.webp", "assets/shr4.webp", "assets/shr5.webp", "assets/shr6.webp", "assets/shr7.webp", "assets/shr8.webp"
+    ]
+  },
+  "OTEL9": {
+    "title": "Superior Twin Oda (Ayrı Yataklı)",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "38 m2",
+    "rooms": "1 Yatak Odası (2 Ayrı Yatak)",
+    "desc": "İki adet tek kişilik yatak bulunan Superior oda.",
+    "images": [
+      "assets/stf1.webp", "assets/stf2.webp", "assets/stf3.webp", "assets/stf4.webp", "assets/stf5.webp", "assets/stf6.webp", "assets/stf7.webp", "assets/stf8.webp"
+    ]
+  },
+  "OTEL10": {
+    "title": "Standart Twin Oda (Ayrı Yataklı)",
+    "price": "Gecelik Fiyat Sorunuz",
+    "location": "Golden Palace Otel",
+    "area": "30 m2",
+    "rooms": "1 Yatak Odası (2 Ayrı Yatak)",
+    "desc": "İki adet tek kişilik yatak bulunan standart oda.",
+    "images": [
+      "assets/stw1.webp", "assets/stw2.webp", "assets/stw3.webp", "assets/stw4.webp", "assets/stw5.webp", "assets/stw6.webp", "assets/stw7.webp"
+    ]
+  },
+  "INSAAT1": {
+    "title": "Proje: Gökdelen A",
+    "price": "Detaylı Bilgi Alın",
+    "location": "İstanbul, Finans Merkezi",
+    "area": "150.000 m2",
+    "rooms": "Ofis + Rezidans",
+    "desc": "Modern mimari, LEED sertifikalı, 50 katlı karma kullanım projesi.",
+    "images": [
+      "assets/insaat-gallery1-1.webp", "assets/insaat-gallery2-1.webp", "assets/insaat-gallery3-1.webp", "assets/insaat-gallery4-1.webp", "assets/insaat-gallery5-1.webp", "assets/insaat-gallery6-1.webp", "assets/insaat-gallery7-1.webp", "assets/insaat-gallery8-1.webp", "assets/insaat-gallery9-1.webp", "assets/insaat-gallery10-1.webp", "assets/insaat-gallery11-1.webp", "assets/insaat-gallery12-1.webp", "assets/insaat-gallery13-1.webp", "assets/insaat-gallery14-1.webp", "assets/insaat-gallery15-1.webp", "assets/insaat-gallery16-1.webp", "assets/insaat-gallery17-1.webp", "assets/insaat-gallery18-1.webp", "assets/insaat-gallery19-1.webp", "assets/insaat-gallery20-1.webp", "assets/insaat-gallery21-1.webp", "assets/insaat-gallery22-1.webp", "assets/insaat-gallery23-1.webp", "assets/insaat-gallery24-1.webp", "assets/insaat-gallery25-1.webp", "assets/insaat-gallery26-1.webp", "assets/insaat-gallery27-1.webp", "assets/insaat-gallery28-1.webp", "assets/insaat-gallery29-1.webp", "assets/insaat-gallery30-1.webp"
+    ]
+  },
+  "INSAAT2": {
+    "title": "Proje: Modern Konutlar B",
+    "price": "Fiyat Sorunuz",
+    "location": "İstanbul, Çekmeköy",
+    "area": "80.000 m2",
+    "rooms": "2+1, 3+1, 4+1 Daireler",
+    "desc": "Geniş peyzaj alanları, sosyal tesisler ve aileye uygun konut projesi.",
+    "images": [
+      "assets/insaat-gallery1-2.webp", "assets/insaat-gallery2-2.webp", "assets/insaat-gallery3-2.webp", "assets/insaat-gallery4-2.webp", "assets/insaat-gallery5-2.webp", "assets/insaat-gallery6-2.webp", "assets/insaat-gallery7-2.webp", "assets/insaat-gallery8-2.webp", "assets/insaat-gallery9-2.webp", "assets/insaat-gallery10-2.webp", "assets/insaat-gallery11-2.webp", "assets/insaat-gallery12-2.webp", "assets/insaat-gallery13-2.webp", "assets/insaat-gallery14-2.webp", "assets/insaat-gallery15-2.webp", "assets/insaat-gallery16-2.webp", "assets/insaat-gallery17-2.webp", "assets/insaat-gallery18-2.webp", "assets/insaat-gallery19-2.webp", "assets/insaat-gallery20-2.webp", "assets/insaat-gallery21-2.webp", "assets/insaat-gallery22-2.webp", "assets/insaat-gallery23-2.webp", "assets/insaat-gallery24-2.webp", "assets/insaat-gallery25-2.webp", "assets/insaat-gallery26-2.webp", "assets/insaat-gallery27-2.webp", "assets/insaat-gallery28-2.webp", "assets/insaat-gallery29-2.webp", "assets/insaat-gallery30-2.webp"
+    ]
+  },
+  "INSAAT3": {
+    "title": "Proje: Alışveriş Merkezi C",
+    "price": "Kiralama için Bilgi Alın",
+    "location": "Ankara, Çankaya",
+    "area": "120.000 m2 Kiralanabilir Alan",
+    "rooms": "200+ Mağaza",
+    "desc": "Bölgenin yeni buluşma noktası, sinema salonları ve gurme lezzet katı.",
+    "images": [
+      "assets/insaat-gallery1-3.webp", "assets/insaat-gallery2-3.webp", "assets/insaat-gallery3-3.webp", "assets/insaat-gallery4-3.webp", "assets/insaat-gallery5-3.webp", "assets/insaat-gallery6-3.webp", "assets/insaat-gallery7-3.webp", "assets/insaat-gallery8-3.webp", "assets/insaat-gallery9-3.webp", "assets/insaat-gallery10-3.webp", "assets/insaat-gallery11-3.webp", "assets/insaat-gallery12-3.webp", "assets/insaat-gallery13-3.webp", "assets/insaat-gallery14-3.webp", "assets/insaat-gallery15-3.webp", "assets/insaat-gallery16-3.webp", "assets/insaat-gallery17-3.webp", "assets/insaat-gallery18-3.webp", "assets/insaat-gallery19-3.webp", "assets/insaat-gallery20-3.webp", "assets/insaat-gallery21-3.webp", "assets/insaat-gallery22-3.webp", "assets/insaat-gallery23-3.webp", "assets/insaat-gallery24-3.webp", "assets/insaat-gallery25-3.webp", "assets/insaat-gallery26-3.webp", "assets/insaat-gallery27-3.webp", "assets/insaat-gallery28-3.webp", "assets/insaat-gallery29-3.webp", "assets/insaat-gallery30-3.webp"
+    ]
+  },
+  "INSAAT4": {
+    "title": "Proje: Ofis Kuleleri D",
+    "price": "Kiralama için Bilgi Alın",
+    "location": "İzmir, Bayraklı",
+    "area": "60.000 m2",
+    "rooms": "A Sınıfı Ofisler",
+    "desc": "Deniz manzaralı, modern teknolojiye sahip A sınıfı ofis alanları.",
+    "images": [
+      "assets/insaat-gallery1-4.webp", "assets/insaat-gallery2-4.webp", "assets/insaat-gallery3-4.webp", "assets/insaat-gallery4-4.webp", "assets/insaat-gallery5-4.webp", "assets/insaat-gallery6-4.webp", "assets/insaat-gallery7-4.webp", "assets/insaat-gallery8-4.webp", "assets/insaat-gallery9-4.webp", "assets/insaat-gallery10-4.webp", "assets/insaat-gallery11-4.webp", "assets/insaat-gallery12-4.webp", "assets/insaat-gallery13-4.webp", "assets/insaat-gallery14-4.webp", "assets/insaat-gallery15-4.webp", "assets/insaat-gallery16-4.webp", "assets/insaat-gallery17-4.webp", "assets/insaat-gallery18-4.webp", "assets/insaat-gallery19-4.webp", "assets/insaat-gallery20-4.webp", "assets/insaat-gallery21-4.webp", "assets/insaat-gallery22-4.webp", "assets/insaat-gallery23-4.webp", "assets/insaat-gallery24-4.webp", "assets/insaat-gallery25-4.webp", "assets/insaat-gallery26-4.webp", "assets/insaat-gallery27-4.webp", "assets/insaat-gallery28-4.webp", "assets/insaat-gallery29-4.webp", "assets/insaat-gallery30-4.webp"
+    ]
+  },
+  "INSAAT5": {
+    "title": "Proje: Endüstriyel Tesis E",
+    "price": "Detaylı Bilgi Alın",
+    "location": "Kocaeli, Gebze OSB",
+    "area": "45.000 m2",
+    "rooms": "Üretim + Lojistik",
+    "desc": "Yüksek tavanlı lojistik ve üretim tesisi.",
+    "images": [
+      "assets/insaat-gallery1-5.webp", "assets/insaat-gallery2-5.webp", "assets/insaat-gallery3-5.webp", "assets/insaat-gallery4-5.webp", "assets/insaat-gallery5-5.webp", "assets/insaat-gallery6-5.webp", "assets/insaat-gallery7-5.webp", "assets/insaat-gallery8-5.webp", "assets/insaat-gallery9-5.webp", "assets/insaat-gallery10-5.webp", "assets/insaat-gallery11-5.webp", "assets/insaat-gallery12-5.webp", "assets/insaat-gallery13-5.webp", "assets/insaat-gallery14-5.webp", "assets/insaat-gallery15-5.webp", "assets/insaat-gallery16-5.webp", "assets/insaat-gallery17-5.webp", "assets/insaat-gallery18-5.webp", "assets/insaat-gallery19-5.webp", "assets/insaat-gallery20-5.webp"
+    ]
+  }
+}
