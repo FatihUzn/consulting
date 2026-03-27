@@ -366,7 +366,13 @@ async function showPage(pageId) {
                 // === YENİ EKLEME (3. İSTEK): Yeni galeri sayfası rotası ===
                 if (pageId === 'page-pruva-otel') fileName = "pruva-otel";
                 // === YENİ EKLEME SONU ===
-
+                // === YENİ EKLEME (5 YENİ BUTON İÇİN) ===
+                if (pageId === 'page-supplier') fileName = "supplier";
+                if (pageId === 'page-market-entry') fileName = "market-entry";
+                if (pageId === 'page-local-support') fileName = "local-support";
+                if (pageId === 'page-risk-control') fileName = "risk-control";
+                if (pageId === 'page-communication') fileName = "communication";
+                // === YENİ EKLEME SONU ===
                 if (fileName === pageId) { 
                    /* 'hero' zaten index.html'de */
                 } else {
