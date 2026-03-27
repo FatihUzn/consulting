@@ -275,13 +275,15 @@ header.scrolled {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  display: flex;
+  display: flex; /* DÜZELTİLDİ: Ortalamayı sağlar */
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
   opacity: 1;
   transition: opacity 0.3s ease-out;
+  padding: 0 !important; /* DÜZELTİLDİ: Gereksiz boşlukları siler */
+  transform: none !important; /* DÜZELTİLDİ: Aşağı kaymayı engeller */
 }
 .hero-video-bg {
   position: absolute;
@@ -314,17 +316,14 @@ header.scrolled {
 }
 
 .hero-video .hero-content-overlay {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
+  position: relative; /* DÜZELTİLDİ: Absolute yerine relative kullanılarak mükemmel hizalama sağlandı */
   z-index: 4;
   width: 100%;
   max-width: 1000px; 
   padding: 0 20px;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   opacity: 0;
-  animation: zoomFadeIn 1.4s var(--easing) forwards 0.5s;
+  animation: zoomFadeIn 1.4s var(--easing) forwards 0.2s;
 }
 
 .hero-content-overlay .hero-since {
@@ -442,15 +441,12 @@ header.scrolled {
 
 /* === SAYFA DÜZENİ VE ALT SAYFALAR === */
 section {
-  padding: 100px 40px;
   text-align: center;
   opacity: 0;
   transform: translateY(40px);
   transition: all 1s var(--easing);
-  background-color: transparent; 
   position: relative; 
   z-index: 10; 
-  background-image: none;
 }
 
 .page-section {
@@ -460,20 +456,27 @@ section {
 .page-section.active { display: block; }
 .page-section:not(.active) { display: none; }
 
+/* DÜZELTİLDİ: Hero aktifken blok yerine flex kalmasını sağlar */
+#hero.active {
+    display: flex !important;
+}
+
 @keyframes pageFadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* DÜZELTİLDİ: Çift boşluk (padding) engellendi */
 .page-section:not(#hero) {
-    padding-top: 160px; /* Header yüksekliği payı */
+    padding-top: 140px; 
+    padding-bottom: 60px;
 }
 section.visible { opacity: 1; transform: translateY(0); }
 
 /* Geri Butonu */
 .btn-page-back {
   position: absolute;
-  top: 160px; 
+  top: 140px; 
   left: 40px;
   z-index: 1001; 
   font-family: 'Inter', sans-serif;
@@ -529,7 +532,7 @@ section.visible { opacity: 1; transform: translateY(0); }
   padding: 60px 30px 20px 30px;
   border-top: 1px solid #333;
   opacity: 0;
-  animation: zoomFadeIn 1.2s var(--easing) forwards 1.6s;
+  animation: fadeIn 0.8s var(--easing) forwards 0.5s; /* DÜZELTİLDİ: Footer'ın anında gelmesi sağlandı */
 }
 .footer-grid {
   display: grid;
@@ -568,8 +571,8 @@ section.visible { opacity: 1; transform: translateY(0); }
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
   .footer-column.logo-column { grid-column: 1 / -1; order: -1; margin-bottom: 30px; }
   
-  .btn-page-back { top: 130px !important; left: 20px !important; z-index: 9999 !important; }
-  .page-section:not(#hero) { padding-top: 210px !important; }
+  .btn-page-back { top: 110px !important; left: 20px !important; z-index: 9999 !important; }
+  .page-section:not(#hero) { padding-top: 170px !important; }
   h2 { margin-top: 30px !important; padding-top: 0 !important; position: relative; z-index: 1; }
 }
 
@@ -587,11 +590,11 @@ section.visible { opacity: 1; transform: translateY(0); }
   .navbar.open { transform: translateX(0); }
   .navbar a { font-size: 1.2em; padding: 15px 0; width: 100%; text-align: center; }
   
-  .lang-dropdown-container { margin-left: 0; margin-top: 20px; }
-  .lang-dropdown-content { right: auto; left: 50%; transform: translateX(-50%); }
+  /* DÜZELTİLDİ: Mobilde açılır dil menüsü hizalaması */
+  .lang-dropdown-container { margin-left: 0; margin-top: 0; }
+  .lang-dropdown-content { right: 0; left: auto; transform: none; }
 
   .hero-video-bg { object-position: center center; }
-  .hero-video .hero-content-overlay { transform: translate(-50%, -45%); }
   
   .footer-grid { grid-template-columns: 1fr; }
   .footer-column { margin-bottom: 20px; }
