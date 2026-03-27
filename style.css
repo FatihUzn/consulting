@@ -372,7 +372,7 @@ header.scrolled {
 .hero-tooltip-wrapper {
   position: relative; 
   display: inline-block;
-  flex: 1 1 260px; /* 200'den 260'a çıkardık: Butonlar daha tok ve estetik duracak */
+  flex: 1 1 220px; /* 200'den 260'a çıkardık: Butonlar daha tok ve estetik duracak */
   max-width: 300px;
 }
 .hero-tooltip-wrapper .btn-hero-link {
@@ -381,7 +381,7 @@ header.scrolled {
 }
 .btn-hero-link {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 15px;
   background: transparent; 
   color: var(--gold-light); 
   border: 2px solid var(--gold-dark); 
