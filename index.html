@@ -258,20 +258,36 @@
         <a data-page="page-services" class="nav-link" data-key="nav_services">Hizmetler</a>
         <a data-page="page-projects" class="nav-link" data-key="nav_projects">Projeler</a>
         <a data-page="page-contact" class="nav-link" data-key="nav_contact">İletişim</a>
-        <div class="language-selector mobile-only" style="display: none;">
-            <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">TR</button>
-            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
-            <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
-            <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button> </div>
+        <div class="lang-dropdown-container" style="margin-left: 20px;">
+        <button class="lang-dropdown-btn" id="lang-menu-btn" aria-label="Dil Seçimi">
+          <i class="fas fa-globe"></i> <span id="current-lang-text">EN</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i>
+        </button>
+        <div class="lang-dropdown-content" id="lang-dropdown-list">
+          <button class="lang-option" data-lang="en" onclick="setLanguage('en')">English</button>
+          <button class="lang-option" data-lang="tr" onclick="setLanguage('tr')">Türkçe</button>
+          <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">العربية</button>
+          <button class="lang-option" data-lang="ru" onclick="setLanguage('ru')">Русский</button>
+          <button class="lang-option" data-lang="de" onclick="setLanguage('de')">Deutsch</button>
+          <button class="lang-option" data-lang="es" onclick="setLanguage('es')">Español</button>
+          <button class="lang-option" data-lang="zh" onclick="setLanguage('zh')">中文</button>
+        </div>
+      </div>
       </nav>
     
-      <div class="language-selector desktop-only" style="margin-left: 20px;">
-          <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">TR</button>
-          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
-          <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">ZH</button>
-          <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button> </div>
-    </div>
-  </div>
+      <div class="lang-dropdown-container" style="margin-left: 20px;">
+        <button class="lang-dropdown-btn" id="lang-menu-btn" aria-label="Dil Seçimi">
+          <i class="fas fa-globe"></i> <span id="current-lang-text">EN</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i>
+        </button>
+        <div class="lang-dropdown-content" id="lang-dropdown-list">
+          <button class="lang-option" data-lang="en" onclick="setLanguage('en')">English</button>
+          <button class="lang-option" data-lang="tr" onclick="setLanguage('tr')">Türkçe</button>
+          <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">العربية</button>
+          <button class="lang-option" data-lang="ru" onclick="setLanguage('ru')">Русский</button>
+          <button class="lang-option" data-lang="de" onclick="setLanguage('de')">Deutsch</button>
+          <button class="lang-option" data-lang="es" onclick="setLanguage('es')">Español</button>
+          <button class="lang-option" data-lang="zh" onclick="setLanguage('zh')">中文</button>
+        </div>
+      </div>
 </header>
 <section class="hero-video page-section active" id="hero">
   <video autoplay muted loop playsinline class="hero-video-bg">

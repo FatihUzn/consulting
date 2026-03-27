@@ -711,14 +711,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (mobileLangSelector) mobileLangSelector.style.display = 'none';
     }
     
-    let finalLang = 'tr'; 
-    const supportedLangs = ['tr', 'en', 'zh', 'ar'];
+    // ... (diğer kodlar)
+    
+    // === DÜZELTİLMİŞ DİL MANTIĞI: Varsayılan EN ===
+    let finalLang = 'en'; // VARSAYILAN DİL İNGİLİZCE YAPILDI
+    const supportedLangs = ['en', 'tr', 'ar', 'ru', 'de', 'es', 'zh']; // Desteklenen diller
     
     const savedLang = localStorage.getItem('lang');
     
     if (savedLang && supportedLangs.includes(savedLang)) {
         finalLang = savedLang;
     } else {
+        // Tarayıcı dili destekleniyorsa onu al, yoksa 'en' kalır
         const browserLang = navigator.language.split('-')[0]; 
         if (supportedLangs.includes(browserLang)) {
             finalLang = browserLang;
@@ -729,8 +733,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         await setLanguage(finalLang);
     } catch (e) {
         console.error("Dil yüklenemedi:", e);
-        await setLanguage('tr'); 
+        await setLanguage('en'); // Hata durumunda da İngilizceye dön
     }
+    // ... (diğer kodların devamı)
     
     setTimeout(preloadProjectImages, 1000); 
     setupMobileMenu();
@@ -1003,3 +1008,35 @@ document.addEventListener('keydown', (event) => {
         closeImageModal();
     }
 });
+// === YENİ: DİL AÇILIR MENÜSÜNÜN KONTROLÜ ===
+document.addEventListener('click', function(e) {
+  const langBtn = document.getElementById('lang-menu-btn');
+  const langDropdown = document.getElementById('lang-dropdown-list');
+  
+  if (!langBtn || !langDropdown) return;
+
+  // Dil butonuna tıklandıysa menüyü aç/kapat
+  if (langBtn.contains(e.target)) {
+    langDropdown.classList.toggle('show');
+  } 
+  // Menü dışında bir yere tıklandıysa kapat
+  else if (!langDropdown.contains(e.target)) {
+    langDropdown.classList.remove('show');
+  }
+});
+
+// setLanguage fonksiyonunun içini, butondaki yazıyı değiştirecek şekilde güncelleyelim.
+// (Mevcut setLanguage fonksiyonunun EN ALTINA, localStorage.setItem satırından hemen sonraya şu bloğu ekle:)
+/*
+    // Butondaki yazıyı güncelle
+    const langBtnText = document.getElementById('current-lang-text');
+    if (langBtnText) {
+      langBtnText.textContent = lang.toUpperCase();
+    }
+    
+    // Açık olan menüyü kapat
+    const langDropdown = document.getElementById('lang-dropdown-list');
+    if (langDropdown) {
+      langDropdown.classList.remove('show');
+    }
+*/
