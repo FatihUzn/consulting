@@ -30,7 +30,7 @@
       <a href="mailto:info@goldenpalace.com" class="btn btn-top-info"><i class="fas fa-envelope"></i> info@goldenpalace.com</a>
       </div>
     <div class="top-bar-right">
-      <a href="https://www.google.com/maps/search/?api=1&query=Kazliçesme,+Kennedy+Cad.+I+blok+no+99,+34020+Zeytinburnu/istanbul" target="_blank" rel="noopener noreferrer" class="btn btn-top-info"><i class="fas fa-map-marker-alt"></i> Yol Tarifi Al</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Kazliçesme,+Kennedy+Cad.+I+blok+no+99,+34020+Zeytinburnu/istanbul" target="_blank" rel="noopener noreferrer" class="btn btn-top-info"><i class="fas fa-map-marker-alt"></i> <span data-key="top_directions">Yol Tarifi Al</span></a>
     </div>
   </div>
 
@@ -224,29 +224,17 @@
 <script src="app.js?v=2.0" defer></script>
 
 <script>
-    // Yeni Danışmanlık Konseptine Uygun Dönen Metinler
-    const data = [
-        {
-            title: "Üretici ve Tedarikçi Yönetimi",
-            description: "Küresel pazarda rekabet avantajı elde etmeniz için güvenilir ve sürdürülebilir bir tedarik zinciri kuruyoruz."
-        },
-        {
-            title: "Pazara Giriş ve Şirket Kuruluşu",
-            description: "Şirketinizin hukuki, mali ve operasyonel altyapısını en sağlam temeller üzerine inşa ediyoruz."
-        },
-        {
-            title: "Türkiye'de Yerinde Destek",
-            description: "Uzaktan yönetimin zorluklarını ortadan kaldırarak, operasyonlarınız için sahadaki gözünüz oluyoruz."
-        },
-        {
-            title: "Risk ve Güvenilirlik Kontrolü",
-            description: "Olası ticari riskleri analiz ediyor, piyasadaki itibar seviyelerini raporlayarak güvenli adımlar atmanızı sağlıyoruz."
-        }
+    // Yeni Danışmanlık Konseptine Uygun Dönen Metinler (Çoklu Dil Destekli)
+    const slideKeys = [
+        { title: "slide_1_title", desc: "slide_1_desc" },
+        { title: "slide_2_title", desc: "slide_2_desc" },
+        { title: "slide_3_title", desc: "slide_3_desc" },
+        { title: "slide_4_title", desc: "slide_4_desc" }
     ];
 
     let index = 0; 
     const textElement = document.getElementById('changing-text'); 
-    const intervalTime = 5000; // 5 saniyede bir değişir
+    const intervalTime = 5000; 
 
     function changeTextWithFade() {
         if(textElement) {
@@ -255,19 +243,26 @@
 
         setTimeout(() => {
             if(textElement) {
-                const currentData = data[index];
+                // Seçili dili al ve metinleri JSON'dan çek
+                const currentLang = localStorage.getItem('lang') || 'en';
+                const langData = translations[currentLang] || {};
                 
-                // Kalın Başlık ve Açıklama
-                textElement.innerHTML = `<strong>${currentData.title}</strong><br><span style="font-size: 0.9em; opacity: 0.9;">${currentData.description}</span>`;
+                const keys = slideKeys[index];
+                const titleText = langData[keys.title] || "";
+                const descText = langData[keys.desc] || "";
+                
+                // Ekrana yazdır
+                textElement.innerHTML = `<strong>${titleText}</strong><br><span style="font-size: 0.9em; opacity: 0.9;">${descText}</span>`;
                 
                 textElement.style.opacity = '1'; 
-                index = (index + 1) % data.length;
+                index = (index + 1) % slideKeys.length;
             }
         }, 500); 
     }
 
     if(textElement) {
-        changeTextWithFade();
+        // Dil dosyalarının yüklenmesini beklemek için ilk çalışmayı yarım saniye geciktiriyoruz
+        setTimeout(changeTextWithFade, 500);
         setInterval(changeTextWithFade, intervalTime);
     }
 </script>
