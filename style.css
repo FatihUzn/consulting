@@ -1955,3 +1955,91 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         z-index: 1;
     }
 }
+/* === YENİ: BUTON ÜZERİNE GELİNCE AÇILAN BİLGİ KUTUCUKLARI (TOOLTIP) === */
+
+.hero-tooltip-wrapper {
+  position: relative; /* Kutucuğun butonun hizasında kalmasını sağlar */
+  display: inline-block;
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+/* Butonun genişliğini wrapper'a yayıyoruz */
+.hero-tooltip-wrapper .btn-hero-link {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-tooltip-content {
+  position: absolute;
+  top: calc(100% + 15px); /* Butonun bittiği yerin 15px altı */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* Ortala ve biraz aşağı kaydır (animasyon için) */
+  width: 260px;
+  background: rgba(10, 10, 10, 0.9); /* Yarı saydam koyu arka plan */
+  backdrop-filter: blur(10px); /* Buzlu cam efekti */
+  border: 1px solid var(--gold-dark);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 204, 102, 0.1);
+  
+  /* Başlangıçta görünmez yap */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Tıklanmasını engelle */
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 100;
+}
+
+/* Yukarı doğru bakan küçük ok (Şık bir detay) */
+.hero-tooltip-content::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: rgba(10, 10, 10, 0.9);
+  border-left: 1px solid var(--gold-dark);
+  border-top: 1px solid var(--gold-dark);
+}
+
+/* İçerideki maddeli liste tasarımı */
+.hero-tooltip-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.hero-tooltip-content ul li {
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.hero-tooltip-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Maddelerin başındaki sarı noktalar */
+.hero-tooltip-content ul li::before {
+  content: "•";
+  color: var(--gold-light);
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* Fareyle wrapper'ın üzerine gelince kutucuğu göster */
+.hero-tooltip-wrapper:hover .hero-tooltip-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0); /* Yukarı doğru kayarak belirme efekti */
+}
