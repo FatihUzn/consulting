@@ -23,7 +23,7 @@ async function setLanguage(lang) {
         }
     }
     
-    document.querySelector('title').textContent = langData['title'] || 'Golden Palace';
+    document.querySelector('title').textContent = langData['title'] || 'Meridian Turkey';
     document.documentElement.lang = lang; 
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
 
