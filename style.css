@@ -658,3 +658,78 @@ html[dir="rtl"] .info-item i { margin-right: 0; margin-left: 15px; }
   color: var(--text-muted);
   font-size: 15px;
 }
+/* ==========================================================================
+   ZARİF HİZMET BUTONLARI VE HİZMET KARTLARI (KUSURSUZ SİMETRİ)
+   ========================================================================== */
+
+.hero-links-container.action-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important; 
+  justify-content: center !important;
+  gap: 15px !important; 
+  margin-top: 50px !important; 
+  max-width: 1000px !important; 
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-tooltip-wrapper {
+  position: relative !important; 
+  display: block !important;
+  width: 220px !important; /* Daha dar ve zarif bir genişlik */
+  flex: none !important; 
+  margin: 0 auto !important;
+}
+
+.btn-hero-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  padding: 8px 12px !important; /* Dikeyde inceltildi */
+  min-height: 48px !important;  /* Tok bir görünüm için sabit yükseklik */
+  background: rgba(0, 0, 0, 0.6) !important; 
+  color: var(--gold-light) !important; 
+  border: 2px solid var(--gold-dark) !important; 
+  border-radius: 8px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important; /* Daha kibar font boyutu */
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important; /* Yazı satır aralığı daraltıldı */
+  text-align: center !important;
+  transition: all 0.4s var(--easing) !important;
+  box-sizing: border-box !important;
+}
+
+.btn-hero-link:hover {
+  background: var(--gold-dark) !important; 
+  color: #111 !important; 
+  border-color: var(--gold-dark) !important;
+  box-shadow: var(--gold-shadow) !important; 
+  transform: translateY(-3px) !important;
+}
+
+/* Hizmet Sayfaları İçin Kart Tasarımı */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: rgba(17, 17, 17, 0.9);
+  border-radius: 12px;
+  border: 1px solid var(--border-dark);
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.4s var(--easing);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), var(--gold-shadow);
+  border-color: var(--gold-dark);
+}
