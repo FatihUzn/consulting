@@ -371,9 +371,10 @@ header.scrolled {
 
 .hero-tooltip-wrapper {
   position: relative; 
-  display: inline-block;
-  flex: 1 1 220px; /* 200'den 260'a çıkardık: Butonlar daha tok ve estetik duracak */
-  max-width: 300px;
+  display: block;
+  width: 280px; /* SABİT GENİŞLİK: Tüm butonlar milimetrik olarak eşit olur */
+  flex: none; /* Esnemeyi durdurduk */
+  margin: 0 auto; /* Ortalamak için */
 }
 .hero-tooltip-wrapper .btn-hero-link {
   width: 100%;

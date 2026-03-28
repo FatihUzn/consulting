@@ -1,51 +1,34 @@
 <section id="page-contact" class="page-section">
-  <div>
-    <h2 data-key="contact_title">Bize Ulaşın</h2>
-    <div class="contact-container">
-      
-      <div class="contact-form">
-        <h3 data-key="contact_form_title">Projenizi Anlatalım</h3>
-        <form onsubmit="alert('Form gönderildi (simülasyon).'); return false;">
-          <label for="name" data-key="contact_label_name">Adınız Soyadınız *</label>
-          <input type="text" id="name" required>
-          
-          <label for="email" data-key="contact_label_email">E-posta Adresiniz *</label>
-          <input type="email" id="email" required>
-          
-          <label for="subject" data-key="contact_label_subject">Konu</label>
-          <input type="text" id="subject">
-          
-          <label for="message" data-key="contact_label_message">Mesajınız *</label>
-          <textarea id="message" rows="5" required></textarea>
-          
-          <button type="submit" class="btn" data-key="btn_send">Gönder</button>
-        </form>
-      </div>
-      
-      <div class="contact-info">
-        <div class="info-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <strong data-key="contact_info_address_title">Adresimiz</strong>
-            <p data-key="contact_info_address_p">Mimar Sinan Cd. No: 42/A, Golden Palace Tower Kat: 12, İstanbul/Türkiye</p>
-          </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-phone"></i>
-          <div>
-            <strong data-key="contact_info_phone_title">Telefon</strong>
-            <p data-key="contact_info_phone_p">+90 (212) 555 1923</p>
-          </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <strong data-key="contact_info_email_title">E-posta</strong>
-            <p data-key="contact_info_email_p">info@goldenpalace.com</p>
-          </div>
+  <h2 data-key="contact_title">Contact Us</h2>
+  <p data-key="contact_subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 50px auto; font-size: 1.1rem;">Let's discuss your project and find the right solution for your business in Turkey. Whether you are looking for a manufacturer, planning to enter the market, or need local support, we are here to assist you.</p>
+  
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong data-key="contact_email_title">Email Us</strong>
+          <a href="mailto:info@yourbusiness.com" style="color: var(--text-muted); text-decoration: none;">info@yourbusiness.com</a>
         </div>
       </div>
-      
+      <div class="info-item">
+        <i class="fab fa-whatsapp"></i>
+        <div>
+          <strong data-key="contact_whatsapp_title">Chat on WhatsApp</strong>
+          <a href="tel:+905320000000" style="color: var(--text-muted); text-decoration: none;">+90 532 000 00 00</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-form">
+      <label data-key="contact_label_name">Name</label>
+      <input type="text" placeholder="...">
+      <label data-key="contact_label_email">Email</label>
+      <input type="email" placeholder="...">
+      <label data-key="contact_label_message">Message</label>
+      <textarea rows="4" placeholder="..."></textarea>
+      <button class="btn" data-key="btn_get_in_touch">Get in Touch</button>
     </div>
   </div>
+  <p data-key="contact_footer" style="text-align: center; margin-top: 40px; font-weight: 500; color: var(--gold-light);">Not in Turkey yet? We can support you remotely.</p>
 </section>
