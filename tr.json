@@ -8,11 +8,9 @@
     "nav_services": "Hizmetler",
     "nav_projects": "Projeler",
     "nav_contact": "İletişim",
-    
     "hero_since": "1997'DEN BERİ",
     "hero_title": "Meridian Turkey",
     "hero_subtitle": "Türkiye'de başarılı olmanız için size özel çözümler.",
-    
     "btn_service_1": "Sourcing & Supplier Finding",
     "desc_service_1": "Türkiye'deki güvenilir üreticileri ve tedarikçileri tespit ediyoruz.",
     "btn_service_2": "Market Entry Consulting",
@@ -23,7 +21,6 @@
     "desc_service_4": "Türkiye sınırları içerisinde pratik yardım ve operasyonel destek sağlıyoruz.",
     "btn_service_5": "Remote Support",
     "desc_service_5": "Türkiye'de değilseniz bile, adınıza araştırma yapıp doğru tedarikçileri buluyoruz.",
-
     "slide_1_title": "Üretici ve Tedarikçi Yönetimi",
     "slide_1_desc": "Küresel pazarda rekabet avantajı elde etmeniz için sürdürülebilir bir tedarik zinciri kuruyoruz.",
     "slide_2_title": "Pazara Giriş ve Şirket Kuruluşu",
@@ -32,7 +29,6 @@
     "slide_3_desc": "Uzaktan yönetimin zorluklarını ortadan kaldırarak sahadaki gözünüz oluyoruz.",
     "slide_4_title": "Risk ve Güvenilirlik Kontrolü",
     "slide_4_desc": "Olası ticari riskleri analiz ederek güvenli adımlar atmanızı sağlıyoruz.",
-
     "supplier_main_title": "Üretici ve Tedarikçi Yönetimi",
     "supplier_p1": "Küresel pazarda rekabet avantajı elde etmenin temel şartı, güvenilir ve sürdürülebilir bir tedarik zinciri kurmaktır. Danışmanlık firması olarak, üretim süreçlerinizden ham madde teminine kadar her aşamada maliyetleri optimize ediyor ve kaliteyi güvence altına alıyoruz.",
     "supplier_p2": "Türkiye pazarındaki geniş ağımız sayesinde, sektörünüze en uygun üreticileri tespit ediyor, kapasite ve kalite kontrol analizlerini gerçekleştiriyoruz. Amacımız, sadece bir tedarikçi bulmak değil, şirketiniz için uzun vadeli stratejik iş ortaklıkları inşa etmektir.",
@@ -42,7 +38,6 @@
     "supplier_li_3": "Fiyat pazarlıkları ve sözleşme süreçlerinin hukuki yönetimi.",
     "supplier_li_4": "Üretim aşamasında kalite kontrol ve yükleme öncesi son denetimler.",
     "supplier_tagline": "\"Doğru üretici, karlı bir geleceğin ilk adımıdır.\"",
-
     "market_main_title": "Pazara Giriş ve Şirket Kuruluşu",
     "market_p1": "Türkiye pazarına adım atmak isteyen yabancı veya yerel yatırımcılar için bürokratik engelleri en aza indiriyoruz. Şirketinizin hukuki, mali ve operasyonel altyapısını en sağlam temeller üzerine kurmanız için stratejik rehberlik sunuyoruz.",
     "market_p2": "Pazar araştırmasından fizibilite raporlarına, şirket tescil işlemlerinden vergi danışmanlığına kadar uçtan uca hizmet veriyoruz. Zaman ve maliyet kaybı yaşamadan, doğru adımlarla ticari faaliyetlerinize hızla başlamanızı sağlıyoruz.",
@@ -52,7 +47,6 @@
     "market_li_3": "Vergi, muhasebe ve yerel regülasyonlara uyum danışmanlığı.",
     "market_li_4": "Çalışma izinleri, bordrolama ve insan kaynakları altyapısının kurulması.",
     "market_tagline": "\"Doğru bir başlangıç, sürdürülebilir büyümenin anahtarıdır.\"",
-
     "localrep_main_title": "Yerel Temsilcilik",
     "localrep_p1": "Türkiye'de fiziksel olarak bulunmanıza gerek kalmadan, ticari operasyonlarınızı sizin adınıza en yüksek verimlilikle yönetiyoruz. Şirketinizin güvenilir bir uzantısı olarak hareket ediyor ve menfaatlerinizi yerinde koruyoruz.",
     "localrep_p2": "Tedarikçilerle iletişimden resmi makamlarla olan süreçlere kadar tüm günlük operasyonlarınızı bizzat yürütüyoruz. Dil bariyerini, kültürel farklılıkları ve saat dilimi sorunlarını ortadan kaldırarak işinizin kesintisiz ilerlemesini sağlıyoruz.",
@@ -62,7 +56,6 @@
     "localrep_li_3": "Resmi kurumlarda, fuarlarda ve sektörel etkinliklerde markanızın profesyonelce temsil edilmesi.",
     "localrep_li_4": "Saat farkı ve dil engeli olmadan anlık iletişim ve düzenli raporlama sağlanması.",
     "localrep_tagline": "\"Türkiye'deki güvenilir yüzünüz, sahadaki gücünüz.\"",
-
     "onground_main_title": "Türkiye'de Yerinde Destek",
     "onground_p1": "Uzaktan yönetimin zorluklarını ortadan kaldırarak, Türkiye'deki operasyonlarınız için sahadaki gözünüz ve kulağınız oluyoruz. Fiziksel varlığınızın gerekmediği durumlarda işlerinizin kesintisiz ve hatasız ilerlemesini sağlıyoruz.",
     "onground_p2": "Gümrük işlemlerinden lojistik organizasyonuna, resmi dairelerdeki evrak takiplerinden fuar katılımlarına kadar tüm yerel süreçleri sizin adınıza profesyonelce koordine ediyoruz.",
@@ -72,7 +65,6 @@
     "onground_li_3": "Geçici ofis hizmetleri, iş toplantıları ve fuar stant organizasyonları.",
     "onground_li_4": "Acil durumlara anında müdahale, problem çözme ve sahada kriz yönetimi.",
     "onground_tagline": "\"Mesafeler işinize engel olmasın; biz sizin için sahadayız.\"",
-
     "remote_main_title": "Uzaktan Destek",
     "remote_p1": "Türkiye pazarına girmek veya güvenilir bir tedarikçi bulmak istiyor ancak seyahat edemiyorsanız, fiziksel mesafeleri sizin için ortadan kaldırıyoruz. Sizin adınıza pazar araştırmaları yapıyor, potansiyel üretici ve tedarikçileri detaylı bir şekilde inceliyoruz.",
     "remote_p2": "Uluslararası müşterilerimiz için geliştirdiğimiz uzaktan destek modeliyle, Türkiye'deki tüm ticari süreçlerinizi dijital ortamda şeffafça yürütüyoruz. Doğru verilere dayalı raporlarımız sayesinde, ofisinizden çıkmadan en güvenilir kararları almanızı sağlıyoruz.",
@@ -82,7 +74,6 @@
     "remote_li_3": "Online toplantıların organizasyonu ve tedarikçilerle iletişimin sağlanması.",
     "remote_li_4": "Yatırım ve satın alma kararlarınızı destekleyecek güvenilir bilgi akışının sağlanması.",
     "remote_tagline": "\"Mesafeler başarınıza engel değil; ofisinizden Türkiye pazarına güvenle bağlanın.\"",
-
     "about_title": "Hakkımızda",
     "about_subtitle": "Eşsiz uzmanlığımız ve başarınıza olan bağlılığımızla, uluslararası müşterilerimiz için Türkiye'den en iyi ürünleri tedarik etme konusunda uzmanlaşmış lider bir danışmanlık firmasıyız.",
     "about_box1_title": "Piyasa Bilgisi",
@@ -115,7 +106,6 @@
     "why_box5_title": "Uzaktan ve Sahada Destek",
     "why_box5_desc": "İster Türkiye'de ister yurtdışında olun, araştırmadan toplantılara kadar her aşamada yanınızdayız.",
     "why_footer": "Türkiye'de netlik, güven ve doğru bağlantılarla ilerlemenize yardımcı oluyoruz.",
-
     "contact_title": "Bize Ulaşın",
     "contact_subtitle": "Projenizi konuşalım ve Türkiye'deki işiniz için doğru çözümü bulalım. Bir üretici arıyor, Türkiye pazarına girmeyi planlıyor veya yerel desteğe ihtiyaç duyuyor olun, her adımda size yardımcı olmak için buradayız.",
     "contact_email_title": "E-posta Gönderin",
@@ -125,7 +115,6 @@
     "contact_placeholder_message": "Mesajınız",
     "btn_get_in_touch": "İletişime Geç",
     "contact_footer": "Henüz Türkiye'de değil misiniz? Size uzaktan destek sağlayabiliriz.",
-
     "footer_col_1_title": "Hızlı Menü",
     "footer_col_2_title": "Hizmetlerimiz",
     "footer_col_4_title": "Çözümlerimiz",
@@ -133,5 +122,8 @@
     "contact_info_address_p": "Mimar Sinan Cd. No: 42/A, Meridian Tower Kat: 12, İstanbul/Türkiye",
     "contact_info_phone_p": "+90 (212) 555 1923",
     "contact_info_email_p": "info@meridianturkey.com",
-    "footer_copyright": "© 2026 Meridian Turkey Consulting. Tüm hakları saklıdır."
+    "footer_copyright": "© 2026 Meridian Turkey Consulting. Tüm hakları saklıdır.",
+    "contact_label_name": "Adınız",
+    "contact_label_email": "E-posta",
+    "contact_label_message": "Mesajınız"
 }

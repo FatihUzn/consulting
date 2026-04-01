@@ -8,11 +8,9 @@
     "nav_services": "Services",
     "nav_projects": "Projects",
     "nav_contact": "Contact",
-    
     "hero_since": "SINCE 1997",
     "hero_title": "Meridian Turkey",
     "hero_subtitle": "Tailored solutions to help you succeed in Turkey.",
-    
     "btn_service_1": "Sourcing & Supplier Finding",
     "desc_service_1": "Identifying trusted manufacturers and suppliers in Turkey.",
     "btn_service_2": "Market Entry Consulting",
@@ -23,7 +21,6 @@
     "desc_service_4": "Providing hands-on assistance and support within Turkey.",
     "btn_service_5": "Remote Support",
     "desc_service_5": "Conducting research and identifying suitable suppliers remotely.",
-
     "slide_1_title": "Manufacturer Management",
     "slide_1_desc": "We establish a sustainable supply chain for global advantage.",
     "slide_2_title": "Company Formation",
@@ -32,7 +29,6 @@
     "slide_3_desc": "Your eyes and ears on the field for seamless operations.",
     "slide_4_title": "Risk Control",
     "slide_4_desc": "Analyzing commercial risks to secure your investments.",
-
     "supplier_main_title": "Sourcing & Supplier Finding",
     "supplier_p1": "The fundamental requirement for gaining a competitive advantage in the global market is establishing a reliable and sustainable supply chain. As a consulting firm, we optimize costs and guarantee quality at every stage, from production processes to raw material procurement.",
     "supplier_p2": "Thanks to our extensive network in the Turkish market, we identify the most suitable manufacturers for your sector and conduct capacity and quality control analyses. Our goal is not just to find a supplier, but to build long-term strategic partnerships for your company.",
@@ -42,7 +38,6 @@
     "supplier_li_3": "Price negotiations and legal management of contract processes.",
     "supplier_li_4": "Quality control during production and final pre-shipment inspections.",
     "supplier_tagline": "\"The right manufacturer is the first step to a profitable future.\"",
-
     "market_main_title": "Market Entry Consulting",
     "market_p1": "We minimize bureaucratic hurdles for foreign or local investors wishing to enter the Turkish market. We provide strategic guidance to build your company's legal, financial, and operational infrastructure on the most solid foundations.",
     "market_p2": "We offer end-to-end services, from market research and feasibility reports to company registration and tax consulting. We ensure you start your commercial activities swiftly with the right steps, without losing time or money.",
@@ -52,7 +47,6 @@
     "market_li_3": "Consultancy on compliance with tax, accounting, and local regulations.",
     "market_li_4": "Establishing work permits, payroll, and human resources infrastructure.",
     "market_tagline": "\"The right start is the key to sustainable growth.\"",
-
     "localrep_main_title": "Local Representation",
     "localrep_p1": "We manage your commercial operations on your behalf with maximum efficiency, without the need for your physical presence in Turkey. Acting as a reliable extension of your company, we protect your interests on the ground.",
     "localrep_p2": "We personally handle all your daily operations, from communicating with suppliers to processes with official authorities. By eliminating language barriers, cultural differences, and time zone issues, we ensure your business moves forward seamlessly.",
@@ -62,7 +56,6 @@
     "localrep_li_3": "Professional representation of your brand at official institutions, fairs, and sector events.",
     "localrep_li_4": "Providing instant communication and regular reporting without time zone or language barriers.",
     "localrep_tagline": "\"Your trusted face in Turkey, your power on the ground.\"",
-
     "onground_main_title": "On-Ground Support in Turkey",
     "onground_p1": "Eliminating the challenges of remote management, we become your eyes and ears on the ground for your operations in Turkey. We ensure your business runs smoothly and flawlessly when your physical presence is not required.",
     "onground_p2": "From customs procedures to logistics organization, from document tracking in official departments to fair participations, we professionally coordinate all local processes on your behalf.",
@@ -72,7 +65,6 @@
     "onground_li_3": "Temporary office services, business meetings, and fair booth organizations.",
     "onground_li_4": "Immediate response to emergencies, problem-solving, and on-site crisis management.",
     "onground_tagline": "\"Don't let distances hinder your business; we are on the ground for you.\"",
-
     "remote_main_title": "Remote Support",
     "remote_p1": "If you want to enter the Turkish market or find reliable suppliers but cannot travel, we eliminate physical distances for you. We conduct market research on your behalf and examine potential manufacturers and suppliers in detail.",
     "remote_p2": "With the remote support model we developed for our international clients, we transparently manage all your commercial processes in Turkey digitally. Thanks to our data-driven reports, we ensure you make the most reliable decisions without leaving your office.",
@@ -82,7 +74,6 @@
     "remote_li_3": "Organizing online meetings and facilitating communication with suppliers.",
     "remote_li_4": "Providing a reliable flow of information to support your investment and purchasing decisions.",
     "remote_tagline": "\"Distances are not an obstacle to your success; connect safely to the Turkish market from your office.\"",
-
     "about_title": "About Us",
     "about_subtitle": "We are a leading consultancy specializing in sourcing the best products from Turkey for international clients with unmatched expertise and dedication to your success.",
     "about_box1_title": "Market Knowledge",
@@ -115,7 +106,6 @@
     "why_box5_title": "Remote & On-Ground Support",
     "why_box5_desc": "Whether you are in Turkey or abroad, we support you both remotely and on-site.",
     "why_footer": "We help you move forward with clarity, confidence, and the right connections in Turkey.",
-
     "contact_title": "Contact Us",
     "contact_subtitle": "Let's discuss your project and find the right solution for your business in Turkey. Whether you are looking for a manufacturer, planning to enter the Turkish market, or need local support, we are here to assist you at every step.",
     "contact_email_title": "Email Us",
@@ -125,7 +115,6 @@
     "contact_placeholder_message": "Message",
     "btn_get_in_touch": "Get in Touch",
     "contact_footer": "Not in Turkey yet? We can support you remotely.",
-
     "footer_col_1_title": "Quick Links",
     "footer_col_2_title": "Our Services",
     "footer_col_4_title": "Our Solutions",
@@ -133,5 +122,8 @@
     "contact_info_address_p": "Mimar Sinan Ave. No: 42/A, Meridian Tower Floor: 12, Istanbul/Turkey",
     "contact_info_phone_p": "+90 (212) 555 1923",
     "contact_info_email_p": "info@meridianturkey.com",
-    "footer_copyright": "© 2026 Meridian Turkey Consulting. All rights reserved."
+    "footer_copyright": "© 2026 Meridian Turkey Consulting. All rights reserved.",
+    "contact_label_name": "Name",
+    "contact_label_email": "Email",
+    "contact_label_message": "Message"
 }

@@ -122,5 +122,8 @@
     "contact_info_address_p": "Mimar Sinan Ave. No: 42/A, Meridian Tower Etage: 12, Istanbul/Türkei",
     "contact_info_phone_p": "+90 (212) 555 1923",
     "contact_info_email_p": "info@meridianturkey.com",
-    "footer_copyright": "© 2026 Meridian Turkey Consulting. Alle Rechte vorbehalten."
+    "footer_copyright": "© 2026 Meridian Turkey Consulting. Alle Rechte vorbehalten.",
+    "contact_label_name": "Name",
+    "contact_label_email": "E-Mail",
+    "contact_label_message": "Nachricht"
 }

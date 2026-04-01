@@ -122,5 +122,8 @@
     "contact_info_address_p": "شارع معمار سنان، رقم 42/أ، برج ميريديان، الطابق 12، إسطنبول/تركيا",
     "contact_info_phone_p": "+90 (212) 555 1923",
     "contact_info_email_p": "info@meridianturkey.com",
-    "footer_copyright": "© 2026 Meridian Turkey Consulting. جميع الحقوق محفوظة."
+    "footer_copyright": "© 2026 Meridian Turkey Consulting. جميع الحقوق محفوظة.",
+    "contact_label_name": "الاسم",
+    "contact_label_email": "البريد الإلكتروني",
+    "contact_label_message": "الرسالة"
 }

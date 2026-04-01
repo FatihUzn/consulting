@@ -122,5 +122,8 @@
     "contact_info_address_p": "Mimar Sinan 大道 42/A，Meridian Tower 12 层，伊斯坦布尔/土耳其",
     "contact_info_phone_p": "+90 (212) 555 1923",
     "contact_info_email_p": "info@meridianturkey.com",
-    "footer_copyright": "© 2026 Meridian Turkey Consulting. 版权所有。"
+    "footer_copyright": "© 2026 Meridian Turkey Consulting. 版权所有。",
+    "contact_label_name": "姓名",
+    "contact_label_email": "电子邮件",
+    "contact_label_message": "留言"
 }
