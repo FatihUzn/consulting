@@ -57,9 +57,9 @@ async function showPage(pageId) {
     let newPage = document.getElementById(pageId);
     
     if (!newPage) {
-        if (pageCache[pageId]) {
-            document.getElementById('page-container').insertAdjacentHTML('beforeend', pageCache[pageId]);
-        } else {
+        // pageCache varsa DOM'a TEKRAR ekleme — sayfa zaten ilk yüklemede eklendi,
+        // newPage = document.getElementById(pageId) ile bulunur.
+        if (!pageCache[pageId]) {
             try {
                 let fileName = pageId;
                 
@@ -89,6 +89,7 @@ async function showPage(pageId) {
                 return;
             }
         }
+        // pageCache veya fetch sonrası DOM'dan bul
         newPage = document.getElementById(pageId);
     }
 
@@ -170,6 +171,30 @@ window.addEventListener('hashchange', () => {
     showPage(pageId);
 });
 
+// ==================== CONTACT FORM ====================
+function setupContactForm() {
+    // contact.html dinamik yüklendiğinde form bulunamayabilir,
+    // bu yüzden document event delegation kullanıyoruz
+    document.addEventListener('submit', function(e) {
+        if (e.target && e.target.id === 'contactForm') {
+            e.preventDefault();
+            const name = e.target.querySelector('[data-name="name"]')?.value?.trim()
+                      || e.target.querySelectorAll('input')[0]?.value?.trim() || '';
+            const email = e.target.querySelector('[data-name="email"]')?.value?.trim()
+                       || e.target.querySelectorAll('input')[1]?.value?.trim() || '';
+            const message = e.target.querySelector('textarea')?.value?.trim() || '';
+
+            if (!name || !email || !message) {
+                alert('Lütfen tüm alanları doldurun.');
+                return;
+            }
+
+            const waText = encodeURIComponent(`Merhaba,\n\nAdım: ${name}\nE-posta: ${email}\n\nMesaj:\n${message}`);
+            window.open(`https://wa.me/905320000000?text=${waText}`, '_blank');
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     window.scrollTo(0, 0); 
     
@@ -188,6 +213,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     await setLanguage(finalLang);
     setupMobileMenu();
+    setupContactForm();
 
     document.querySelectorAll('.nav-link[data-page], .btn-hero-link[data-page]').forEach(link => {
         link.addEventListener('click', (e) => {

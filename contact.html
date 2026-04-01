@@ -20,15 +20,15 @@
       </div>
     </div>
     
-    <div class="contact-form">
+    <form class="contact-form" id="contactForm">
       <label data-key="contact_label_name">Name</label>
-      <input type="text" placeholder="...">
+      <input type="text" placeholder="..." required>
       <label data-key="contact_label_email">Email</label>
-      <input type="email" placeholder="...">
+      <input type="email" placeholder="..." required>
       <label data-key="contact_label_message">Message</label>
-      <textarea rows="4" placeholder="..."></textarea>
-      <button class="btn" data-key="btn_get_in_touch">Get in Touch</button>
-    </div>
+      <textarea rows="4" placeholder="..." required></textarea>
+      <button type="submit" class="btn" data-key="btn_get_in_touch">Get in Touch</button>
+    </form>
   </div>
   <p data-key="contact_footer" style="text-align: center; margin-top: 40px; font-weight: 500; color: var(--gold-light);">Not in Turkey yet? We can support you remotely.</p>
 </section>
