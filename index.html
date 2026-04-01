@@ -209,4 +209,18 @@
                 const titleText = langData[keys.title] || "";
                 const descText = langData[keys.desc] || "";
                 
-              
+                textElement.innerHTML = `<strong>${titleText}</strong><br><span style="font-size: 0.9em; opacity: 0.9;">${descText}</span>`;
+                textElement.style.opacity = '1'; 
+                index = (index + 1) % slideKeys.length;
+            }
+        }, 500); 
+    }
+
+    if(textElement) {
+        setTimeout(changeTextWithFade, 500);
+        setInterval(changeTextWithFade, intervalTime);
+    }
+</script>
+
+</body>
+</html>
