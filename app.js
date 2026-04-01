@@ -57,19 +57,16 @@ async function showPage(pageId) {
     let newPage = document.getElementById(pageId);
     
     if (!newPage) {
-        // pageCache varsa DOM'a TEKRAR ekleme — sayfa zaten ilk yüklemede eklendi,
-        // newPage = document.getElementById(pageId) ile bulunur.
-        if (!pageCache[pageId]) {
+        if (pageCache[pageId]) {
+            document.getElementById('page-container').insertAdjacentHTML('beforeend', pageCache[pageId]);
+        } else {
             try {
                 let fileName = pageId;
                 
-                // === ÜST MENÜ (ANA SAYFALAR) ===
                 if (pageId === 'page-about') fileName = 'about';
                 if (pageId === 'page-services') fileName = 'services';
                 if (pageId === 'page-projects') fileName = 'projects';
                 if (pageId === 'page-contact') fileName = 'contact';
-
-                // === PATRONUN İSTEDİĞİ 5 YENİ DETAY SAYFASI ===
                 if (pageId === 'page-supplier') fileName = "supplier";
                 if (pageId === 'page-market-entry') fileName = "market-entry";
                 if (pageId === 'page-local-rep') fileName = "local-rep";
@@ -89,7 +86,6 @@ async function showPage(pageId) {
                 return;
             }
         }
-        // pageCache veya fetch sonrası DOM'dan bul
         newPage = document.getElementById(pageId);
     }
 
@@ -173,8 +169,6 @@ window.addEventListener('hashchange', () => {
 
 // ==================== CONTACT FORM ====================
 function setupContactForm() {
-    // contact.html dinamik yüklendiğinde form bulunamayabilir,
-    // bu yüzden document event delegation kullanıyoruz
     document.addEventListener('submit', function(e) {
         if (e.target && e.target.id === 'contactForm') {
             e.preventDefault();
