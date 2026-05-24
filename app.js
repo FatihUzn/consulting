@@ -34,6 +34,14 @@ async function setLanguage(lang) {
         }
     });
 
+    // FIX — placeholder çevirilerini uygula
+    document.querySelectorAll('[data-placeholder-key]').forEach(el => {
+        const key = el.getAttribute('data-placeholder-key');
+        if (langData[key]) {
+            el.setAttribute('placeholder', langData[key]);
+        }
+    });
+
     const langBtnText = document.getElementById('current-lang-text');
     if (langBtnText) {
       langBtnText.textContent = lang.toUpperCase(); 
@@ -105,6 +113,13 @@ async function showPage(pageId) {
                     el.innerHTML = translations[currentLang][key];
                 }
             });
+            // FIX — dinamik yüklenen sayfalarda da placeholder çevirisi uygula
+            newPage.querySelectorAll('[data-placeholder-key]').forEach(el => {
+                const key = el.getAttribute('data-placeholder-key');
+                if (translations[currentLang][key]) {
+                    el.setAttribute('placeholder', translations[currentLang][key]);
+                }
+            });
         }
 
         newPage.classList.remove('visible');
@@ -136,6 +151,9 @@ function setupMobileMenu() {
         });
     }
 
+    // Sadece başlangıçta DOM'da olan nav-link'ler için listener
+    // Dinamik yüklenen sayfaların nav-link'leri için aşağıdaki
+    // event delegation (document click handler) devreye girer
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             if (navbar) navbar.classList.remove('open');
@@ -143,6 +161,8 @@ function setupMobileMenu() {
     });
 }
 
+// ==================== EVENT DELEGATION ====================
+// Hem statik hem dinamik yüklenen sayfalardaki data-page linklerini yakalar
 document.addEventListener('click', function(e) {
     const langBtn = document.getElementById('lang-menu-btn');
     const langDropdown = document.getElementById('lang-dropdown-list');
@@ -160,6 +180,18 @@ document.addEventListener('click', function(e) {
         const targetHash = e.target.getAttribute('href') || '#hero';
         location.hash = targetHash; 
     }
+
+    // FIX — dinamik sayfalardaki [data-page] linkleri için event delegation
+    // (services.html kartları, projects.html butonu vb.)
+    const pageLink = e.target.closest('[data-page]');
+    if (pageLink) {
+        e.preventDefault();
+        const pageId = pageLink.getAttribute('data-page');
+        // Mobile menüyü kapat
+        const navbar = document.getElementById('navbar');
+        if (navbar) navbar.classList.remove('open');
+        location.hash = pageId;
+    }
 });
 
 window.addEventListener('hashchange', () => {
@@ -168,25 +200,65 @@ window.addEventListener('hashchange', () => {
 });
 
 // ==================== CONTACT FORM ====================
+// contact.html'den insertAdjacentHTML ile eklenen <script> taglari tarayici
+// guvenlik politikasi geregi calistirilmaz. Bu yuzden AJAX handler burada tanimlanir.
 function setupContactForm() {
     document.addEventListener('submit', function(e) {
-        if (e.target && e.target.id === 'contactForm') {
-            e.preventDefault();
-            const name = e.target.querySelector('[data-name="name"]')?.value?.trim()
-                      || e.target.querySelectorAll('input')[0]?.value?.trim() || '';
-            const email = e.target.querySelector('[data-name="email"]')?.value?.trim()
-                       || e.target.querySelectorAll('input')[1]?.value?.trim() || '';
-            const message = e.target.querySelector('textarea')?.value?.trim() || '';
+        const form = e.target;
+        if (!form || form.id !== 'contactForm') return;
+        e.preventDefault();
 
-            if (!name || !email || !message) {
-                alert('Lütfen tüm alanları doldurun.');
-                return;
-            }
+        const btn      = form.querySelector('button[type="submit"]');
+        const feedback = document.getElementById('form-feedback');
+        const data     = new FormData(form);
 
-            const waText = encodeURIComponent(`Merhaba,\n\nAdım: ${name}\nE-posta: ${email}\n\nMesaj:\n${message}`);
-            window.open(`https://wa.me/905320000000?text=${waText}`, '_blank');
-        }
+        btn.disabled    = true;
+        btn.textContent = '...';
+        if (feedback) feedback.style.display = 'none';
+
+        fetch('mail.php', { method: 'POST', body: data })
+            .then(r => r.json())
+            .then(res => {
+                if (feedback) {
+                    feedback.style.display = 'block';
+                    if (res.success) {
+                        feedback.style.color   = 'var(--gold-light)';
+                        feedback.textContent   = res.message;
+                        form.reset();
+                    } else {
+                        feedback.style.color   = '#f87171';
+                        feedback.textContent   = res.message;
+                    }
+                }
+            })
+            .catch(() => {
+                if (feedback) {
+                    feedback.style.display = 'block';
+                    feedback.style.color   = '#f87171';
+                    feedback.textContent   = 'Bir hata oluştu. Lütfen tekrar deneyin.';
+                }
+            })
+            .finally(() => {
+                btn.disabled = false;
+                // FIX 3 — Aktif dile göre buton metnini geri yaz, hardcoded değil
+                const currentLang = localStorage.getItem('lang') || 'en';
+                btn.textContent = translations[currentLang]?.btn_get_in_touch || 'Get in Touch';
+            });
     });
+}
+
+// ==================== SCROLL — HEADER ====================
+// FIX 2 — CSS'teki header.scrolled class'ini aktive eden scroll listener
+function setupScrollHeader() {
+    const header = document.getElementById('main-header');
+    if (!header) return;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }, { passive: true });
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -208,7 +280,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     await setLanguage(finalLang);
     setupMobileMenu();
     setupContactForm();
+    setupScrollHeader();
 
+    // Statik sayfadaki nav-link'ler için click listener (hero içindekiler)
     document.querySelectorAll('.nav-link[data-page], .btn-hero-link[data-page]').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();

@@ -125,5 +125,21 @@
     "footer_copyright": "© 2026 Meridian Turkey Consulting. Tüm hakları saklıdır.",
     "contact_label_name": "Adınız",
     "contact_label_email": "E-posta",
-    "contact_label_message": "Mesajınız"
+    "contact_label_message": "Mesajınız",
+    "services_subtitle": "Türkiye'de başarılı olmanız için size özel çözümler.",
+    "projects_cta_text": "Projenizi konuşmak için bize ulaşın.",
+    "projects_cta_btn": "İletişime Geç",
+    "footer_col_3_title": "",
+    "project_1_title": "Tekstil Sektörü — Avrupa Tedarik Zinciri",
+    "project_1_desc": "Avrupalı bir moda markası için Türkiye'deki 12 tekstil üreticisiyle sürdürülebilir tedarik zinciri kurulumu.",
+    "project_2_title": "Şirket Kuruluşu — Körfez Yatırımcısı",
+    "project_2_desc": "Körfez bölgesinden bir yatırımcı için İstanbul'da limited şirket kuruluşu, vergi danışmanlığı ve yerel operasyon yönetimi.",
+    "project_3_title": "Uzaktan Tedarikçi Araştırması — Asya Pazarı",
+    "project_3_desc": "Asya'dan bir alıcı için Türkiye mermer ve granit sektöründe uzaktan tedarikçi araştırması ve kalite denetimi.",
+    "project_4_title": "Yerel Temsilcilik — Avrupa Makine Firması",
+    "project_4_desc": "Türkiye pazarına girmek isteyen bir Avrupa makine firması için yerel temsilcilik ve müşteri toplantıları koordinasyonu.",
+    "project_5_title": "Lojistik & Gümrük Koordinasyonu",
+    "project_5_desc": "Orta Doğu'dan ithal eden bir firma için gümrük süreçleri, belge takibi ve depolama organizasyonu.",
+    "project_6_title": "Pazar Araştırması — Gıda Sektörü",
+    "project_6_desc": "Türkiye organik gıda pazarına girmek isteyen bir Avrupa firması için kapsamlı fizibilite ve rekabet analizi raporu."
 }

@@ -22,13 +22,15 @@
     
     <form class="contact-form" id="contactForm" action="mail.php" method="POST">
       <label data-key="contact_label_name">Name</label>
-      <input type="text" name="name" placeholder="..." required>
+      <input type="text" name="name" data-placeholder-key="contact_placeholder_name" placeholder="Name" required>
       <label data-key="contact_label_email">Email</label>
-      <input type="email" name="email" placeholder="..." required>
+      <input type="email" name="email" data-placeholder-key="contact_placeholder_email" placeholder="Email" required>
       <label data-key="contact_label_message">Message</label>
-      <textarea name="message" rows="4" placeholder="..." required></textarea>
+      <textarea name="message" rows="4" data-placeholder-key="contact_placeholder_message" placeholder="Message" required></textarea>
       <button type="submit" class="btn" data-key="btn_get_in_touch">Get in Touch</button>
+      <p id="form-feedback" style="display:none; margin-top: 15px; font-weight: 500; text-align: center;"></p>
     </form>
   </div>
   <p data-key="contact_footer" style="text-align: center; margin-top: 40px; font-weight: 500; color: var(--gold-light);">Not in Turkey yet? We can support you remotely.</p>
 </section>
+<!-- Form AJAX handler app.js içindeki setupContactForm() tarafından yönetilmektedir. -->
