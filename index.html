@@ -6,11 +6,13 @@
 <title data-key="title">Meridian Turkey — Danışmanlık ve Yatırım</title>
 <link rel="icon" type="image/png" href="assets/meridian_turkey_logo.webp">
 <link rel="preload" as="image" href="assets/meridian_turkey_logo.webp">
-<link rel="preload" as="image" href="assets/background.webp">
-<link rel="preload" as="image" href="assets/for_hero.webp">
 
 <link rel="preload" as="fetch" href="en.json" crossorigin>
+<link rel="preload" as="fetch" href="tr.json" crossorigin>
 <link rel="preload" as="fetch" href="ar.json" crossorigin>
+<link rel="preload" as="fetch" href="ru.json" crossorigin>
+<link rel="preload" as="fetch" href="de.json" crossorigin>
+<link rel="preload" as="fetch" href="es.json" crossorigin>
 <link rel="preload" as="fetch" href="zh.json" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
@@ -49,11 +51,11 @@
       </button>
     
       <nav class="navbar" id="navbar">
-        <a data-page="hero" class="nav-link" data-key="nav_home">Anasayfa</a>
-        <a data-page="page-about" class="nav-link" data-key="nav_about">Kurumsal</a>
-        <a data-page="page-services" class="nav-link" data-key="nav_services">Hizmetler</a>
-        <a data-page="page-projects" class="nav-link" data-key="nav_projects">Projeler</a>
-        <a data-page="page-contact" class="nav-link" data-key="nav_contact">İletişim</a>
+        <a href="#hero" data-page="hero" class="nav-link" data-key="nav_home">Anasayfa</a>
+        <a href="#page-about" data-page="page-about" class="nav-link" data-key="nav_about">Kurumsal</a>
+        <a href="#page-services" data-page="page-services" class="nav-link" data-key="nav_services">Hizmetler</a>
+        <a href="#page-projects" data-page="page-projects" class="nav-link" data-key="nav_projects">Projeler</a>
+        <a href="#page-contact" data-page="page-contact" class="nav-link" data-key="nav_contact">İletişim</a>
       </nav>
     
       <div class="lang-dropdown-container" style="margin-left: 20px;">
@@ -137,6 +139,7 @@
         </div>
 
         <div class="footer-column logo-column">
+            <h3 data-key="footer_col_3_title" style="visibility: hidden; margin: 0; height: 0; overflow: hidden;"></h3>
             <div class="footer-logo-container">
                 <img src="assets/meridian_turkey_logo.webp" alt="Meridian Turkey Logo">
                 <div class="footer-text-container">
