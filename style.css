@@ -108,13 +108,13 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.0) 100%);
+  background: #000000;
   transition: background-color 0.3s;
   animation: zoomFadeIn 1s var(--easing) forwards 0.2s;
   opacity: 0;
 }
 header.scrolled {
-  background-color: rgba(10, 10, 10, 0.9);
+  background-color: #000000;
 }
 
 .header-top-row {
@@ -335,11 +335,24 @@ header.scrolled {
   text-transform: uppercase;
   display: block;
 }
+.hero-brand-tag {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(13px, 1.4vw, 17px);
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 18px;
+  opacity: 0.9;
+}
+
 .hero-content-overlay h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(32px, 5vw, 64px);
+  font-size: clamp(36px, 5.5vw, 72px);
   font-weight: 900;
   margin: 0 0 20px 0;
+  line-height: 1.1;
 }
 
 /* Dönen Metin Stili */
@@ -606,7 +619,7 @@ section.visible { opacity: 1; transform: translateY(0); }
 @media (max-width: 480px) {
   h1 { font-size: 40px; }
   h2 { font-size: 32px; }
-  .hero-content-overlay h1 { font-size: 36px; }
+  .hero-content-overlay h1 { font-size: clamp(28px, 8vw, 42px); }
   section { padding-left: 20px; padding-right: 20px; }
   .brand img { height: 35px; }
 }
@@ -732,4 +745,65 @@ html[dir="rtl"] .info-item i { margin-right: 0; margin-left: 15px; }
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), var(--gold-shadow);
   border-color: var(--gold-dark);
+}
+/* ==================== KADLENCE BRAND ==================== */
+.brand-kadlence {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.brand-kadlence-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  line-height: 1;
+  background: linear-gradient(135deg, #c8a84b 0%, #f0d080 50%, #c8a84b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-kadlence-line {
+  width: 100%;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent 0%, #c8a84b 30%, #f0d080 60%, transparent 100%);
+  border-radius: 2px;
+}
+
+/* Footer varyantı — biraz daha büyük */
+.brand-kadlence--footer .brand-kadlence-name {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+  .brand-kadlence-name {
+    font-size: 1.5rem;
+  }
+}
+
+/* ==================== HERO TAGLINE ==================== */
+.hero-tagline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 768px) {
+  .hero-tagline {
+    padding: 0 10px;
+  }
+  .hero-brand-tag {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
 }
